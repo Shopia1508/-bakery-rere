@@ -14,10 +14,6 @@ Route::get('/location', function () {
     return view('location');
 })->name('location');
 
-Route::get('/faq', function () {
-    return view('faq');
-})->name('faq');
-
 Route::get('/order', function () {
     return view('order');
 })->name('order');

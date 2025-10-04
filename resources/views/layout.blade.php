@@ -6,9 +6,14 @@
     <title>Global Bakery</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
    
 </head>
 <body>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container">
@@ -20,7 +25,6 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('products') }}">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('faq') }}">FAQ</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('location') }}">Location</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('order') }}">Order</a></li>
                 </ul>
@@ -29,24 +33,10 @@
     </nav>
     
 
-    <!-- Konten Halaman -->
+    
     <div class="container mt-4">
         @yield('content')
-          <!--Hero Section-->
-          <div class="hero">
-            <div class="hero-text">
-                <h2>SWEET BITE <br> CAKE & COOKIES </h2>
-                <p> SweetBite Cakes & Cookies — pusat kue ulang tahun, aneka cake, bolu, <br>dan roti setiap hari. 
-                    Praktis, lezat, dan cocok untuk semua perayaan.</p>
-                <button>HAPPY SHOPPING!</button>
-            </div>
-            <div class="hero-img">
-                <h3>"Handmade with love <br> Tasted with joy."</h3> 
-                <img src="{{ asset('images/berrys.jpeg') }}" alt="berrys" width="300" class="float-img" >
-
-            </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+     
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
