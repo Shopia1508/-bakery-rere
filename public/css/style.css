@@ -3,27 +3,33 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
 }
 /*Navbar*/
 .navbar-custom {
-  background-color: #7b5e27;
+  background-color: #90763e;
   padding: 18px 55px;
-
+  border-bottom: 5px #7c5a1a;
 }
 .navbar-custom .navbar-brand{
-   color: white;
+   color: #ffffff;
    font-weight: bold;
    font-size: 1.6rem;
    font-family: "Playfair Display", serif;
+   border-bottom: 5px #ffffff;
+}
+.navbar-custom .navbar-brand span{
+    color: rgb(255, 217, 129);
+    font-weight: bold;
 }
 .navbar-custom .nav-link{
-    color: white;
+    color: rgb(255, 255, 255);
     transition: color 0.3s;
     font-weight: bold;
     font-size: 1.1rem;
 }
 .navbar-custom .nav-link:hover{
-    color: #f0a500;
+    color: #574622;
     border-bottom: 2px solid #f0a500;
 }
 
@@ -33,126 +39,132 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    gap: 50px;                 
+    padding: 60px 80px;
+    background-color:#FFF7DD;
 }
 .hero text {
     max-width: 45%;
 }
 .hero-text h2 {
-    font-size: 50px;
-    color: #5a3b00;
+    margin-top: 50px;
+    font-size: 60px;
     font-family: "Playfair Display", serif;
+    text-align: justify;
 }
-.hero text p {
-    font-size: 30px 0;
+.hero-text p {
+    font-size: 100px 0;
     color: #444;
-    margin: 1.5;
+    margin-top: 20px;
+    text-align: justify;
 }
-.hero-text button{
-    background: #a6731e;
-    border: none;
-    color: #ffffff;
-    padding: 12px 25px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 14px;
+
+.slider-container{
+    position: relative;
+    margin-top: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 .hero-img img{
-    max-width: 300px;
-    height: auto;
+    width: 300px;
     margin: 10px;
-    border-radius: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 24px #6d4c0f;
 }
 .hero-img h3{
-    color: #7e5915;
-    margin-bottom: 20px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    font-size: 23px;
-    font-family: "Josefin Sans", sans-serif;
 }
-.hero-img img{
-    box-shadow: 0px 4px 12px #a16d0b ;
-    border: 2px #b27d1a ;
-}
-.hero-img .img:hover{
-    color: #f0a500;
-}
-.container{
-    position: relative;
-}
-.container .wrapper{
-    width: 100px;
-    height: 150px;
+.slider-container .wrapper{
+    width: 100vw;
+    height: 80vh;
     box-shadow: 10px 10px 20px #7c5a1a;
-    margin: 2rem auto;
+    margin-top: 0%;
     overflow: hidden;
-    border-radius: 20px;
 }
-.container .wrapper-holder{
+.slider-container .wrapper-holder{
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(4, 100%);
-    height: 100%;
-    width: 100%;
     animation: slider 30s ease-in-out infinite alternate;
 }
-.container #slider-img-1,
-.container #slider-img-2,
-.container #slider-img-3,
-.container #slider-img-4 {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;   
-    width: 100%;              
-    height: 250%;        
-    object-fit: cover;
-    border-radius: 12px;     
-}
-.container #slider-img-1{
-    background-image:url("/images/kuekue.jpeg");
-}
-.container #slider-img-2{
-    background-image:url("/images/brownieh.jpeg");
-}
-.container #slider-img-3{
-    background-image:url("/images/bakerystraw.jpeg");
-}
-.container #slider-img-4{
+.slider-container #slider-img-1{
     background-image:url("/images/berrycake.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
 }
-.container .button-holder .button{
+.slider-container #slider-img-2{
+    background-image:url("/images/kuekue.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider-container #slider-img-3{
+    background-image:url("/images/brownieh.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider-container #slider-img-4{
+    background-image:url("/images/strawbery.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider-container .button-holder .button{
     background-color: white;
     width: 15px;
     height: 15px;
     border-radius: 20px;
     display: inline-block;
     margin: .3rem;
-    cursor: pointer;
 }
-.container .button-holder{
+.slider-container .button-holder{
     position: absolute;
-    left: 50%;
-    bottom: 10px;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 8px;
+    left: 45%;
+    bottom: 0%;
 }
 .button:hover{
-    box-shadow: 0px 0px 7px 4px rgb(134, 102, 41);
+    box-shadow: 0px 0px 7px 4 px rgb(134, 102, 41);
 }
 @keyframes slider{
     0%{transform: translateX(0%);}
     10%{transform: translateX(-100%);}
     20%{transform: translateX(-100%);}
     30%{transform: translateX(-200%);}
-    40%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}  
     50%{transform: translateX(-200%);}
     60%{transform: translateX(-300%);}
     70%{transform: translateX(-300%);}
     80%{transform: translateX(-300%);}
-    90%{transform: translateX(0%);}
+    90%{transform: translateX(-0%);}
     100%{transform: translateX(0%);}
+} 
+.float-img{
+    width: 200px;
+    animation: float 3s ease-in-out infinite;
 }
-
+@keyframes float{
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+} 
   /*Kategori*/
   .kategori {
     display: flex;
@@ -168,16 +180,19 @@ body {
     font-size: 50px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #7c5a1a;
+    color: #000000;
     text-align: center;
-    font-family: "Playfair Display", serif;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     margin-bottom: 50px;
+}
+.kategori-text h1:hover{
+    border-bottom: 2px #5a3b00;
 }
   .card-img-top{
     width: 100%;
     height: 280px;
-    border-radius: 5px;
+    border-radius: 2px;
     object-fit: cover; 
 }
   .custom-card {
@@ -188,16 +203,77 @@ body {
     border-radius: 8px; 
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
     cursor: pointer;
-    border: 4px solid #ffffff; 
+    border: 1px solid #ffffff; 
     box-shadow: 0 8px 12px rgb(127, 97, 33); 
-    margin-top: auto;
+    margin-top: 50px;
+    
 }  
   .custom-card:hover {
     transform: translateY(-10px) scale(1.05);
     box-shadow: 0 15px 15px rgba(78, 56, 25, 0.957); 
     border: 4px solid #826124; 
+}
+.btn-products{
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.btn-products a{
+    background-color: white;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 0 2px  rgb(69, 53, 0);
+}
+.btn-products a:hover{
+    background: rgb(105, 76, 33);
+    color: rgb(255, 255, 255);
+    box-shadow: offset-x offset-y blur-radius spread-radius color;
+}
+.products-card{
+ max-width: 12rem;
+ background-color: #ffffff;
+ padding: 1rem;
+ box-shadow: 0 5px 5px #e1e1e1;
+ font-family: Arial, Helvetica, sans-serif;   
+}
+.products-card img{
+    max-width: 100%;
+}
+.products-card h4{
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+}
+  .products-card div{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
   }
-
+  .products-card button{
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 1em;
+  }
+  .products-card:hover{
+    color: #000000;
+    background-color: #ffffff;
+  }
+  @media screen and (max-width: 576px) {
+     .products-card{
+        font-size: 0.9em;
+     }
+  }
+    
   
-
 

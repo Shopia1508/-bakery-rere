@@ -2,13 +2,10 @@
 
 @section('content')
 
-<!--Hero Section-->
-<div class="hero">
-    <div class="hero-img">
-    <div class="container">
+    <div class="slider-container">
         <div class="wrapper">
             <div class="wrapper-holder">
-                <div id="slider-img-1" ></div>
+                <div id="slider-img-1"></div>
                 <div id="slider-img-2"></div>
                 <div id="slider-img-3"></div>
                 <div id="slider-img-4"></div>
@@ -23,20 +20,23 @@
                   
             </div>
         </div>
-    </div>
-    </div>
-    
+    <!--Hero Section-->
+<div class="hero">
     <div class="hero-text">
-        <h2>SWEET BITE <br> CAKE & COOKIES </h2>
+        <h2>
+            <span style="color: #5a3b00" data-aos="fade-down" data-aos-duration="2500">SWEET BITE </span><br> 
+            <span style="color: #e1a22c" data-aos="fade-down" data-aos-duration="2500">CAKE & COOKIES</span>
+        </h2>
         <p> SweetBite Cakes & Cookies — pusat kue ulang tahun, aneka cake, bolu, <br>dan roti setiap hari. 
             Praktis, lezat, dan cocok untuk semua perayaan.</p>
-        <button>HAPPY SHOPPING!</button>
+        </div>
+        <div class="hero-img"> 
+            <h3 data-aos="fade-down" data-aos-duration="2500"> "Handmade with love <br> Tasted with joy." </h3> 
+            <img src="{{ asset('images/toko.jpeg') }}" alt="toko" class="float-img">
     </div>
-    <div class="hero-img">
-        
-        
     </div>
 </div>
+
   
 <!--Kategori-->
 <div class="kategori">
