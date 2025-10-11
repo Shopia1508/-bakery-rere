@@ -119,139 +119,56 @@
     <div class="container my-5">
   
   <div class="row text-center justify-content-center align-items-stretch">
+  
     
-    <!-- Review 1 -->
-    <div class="col-md-4 mb-4 d-flex">
-      <div class="review-box p-4 shadow rounded flex-fill">
-        <div class="stars mb-2">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-        </div>
-        <p>"Sangat bagus! Rasanya lembut dan manisnya pas!"</p>
-        <div class="user mt-3 d-flex align-items-center justify-content-center gap-3">
-          <img src="{{ asset('images/salma.jpeg') }}" alt="User 1" class="rounded-circle" width="60" height="60">
-          <div>
-            <h5 class="mb-0">Alfina</h5>
-            <small class="text-muted">Happy Customer</small>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Review /testimoni -->
+    <!-- Bagian Testimonials -->
+<section class="testimonials-section">
+  <h2 class="section-title"></h2>
+  <div class="section-content">
+    <div class="slider-container">
+      <div class="slider-wrapper">
+        <ul class="testimonials-list">
+          
+          <!-- Testimoni 1 -->
+          <li class="testimonial">
+            <img src="{{asset('images/salma.jpeg')}}" alt="User" class="user-image">
+            <h3 class="name">Salma Salsabil</h3>
+            <i class="feedback">"Loved the brownies. Perfectly balanced and rich. Will order again."</i>
+          </li>
 
-    <!-- Review 2 -->
-    <div class="col-md-4 mb-4 d-flex">
-      <div class="review-box p-4 shadow rounded flex-fill">
-        <div class="stars mb-2">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="far fa-star"></i>
-        </div>
-        <p>"Tempatnya bersih, pelayanannya ramah banget!"</p>
-        <div class="user mt-3 d-flex align-items-center justify-content-center gap-3">
-          <img src="{{ asset('images/salma 2.jpeg') }}" alt="User 2" class="rounded-circle" width="60" height="60">
-          <div>
-            <h5 class="mb-0">Dina</h5>
-            <small class="text-muted">Cake Lover</small>
-          </div>
-        </div>
-      </div>
-    </div>
+          <!-- Testimoni 2 -->
+          <li class="testimonial">
+            <img src="{{asset('images/salma 2.jpeg')}}" alt="User" class="user-image">
+            <h3 class="name">Alya Putri</h3>
+            <i class="feedback">"Cakenya lembut banget, manisnya pas!"</i>
+          </li>
 
-    <!-- Review 3 -->
-    <div class="col-md-4 mb-4 d-flex">
-      <div class="review-box p-4 shadow rounded flex-fill">
-        <div class="stars mb-2">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-          <i class="far fa-star"></i>
-        </div>
-        <p>"Kue-nya lembut banget, topping-nya juga melimpah!"</p>
-        <div class="user mt-3 d-flex align-items-center justify-content-center gap-3">
-          <img src="{{ asset('images/salma3.jpeg') }}" alt="User 3" class="rounded-circle" width="60" height="60">
-          <div>
-            <h5 class="mb-0">Lina</h5>
-            <small class="text-muted">Sweet Lover</small>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 mb-4 d-flex">
-      <div class="review-box p-4 shadow rounded flex-fill">
-        <div class="stars mb-2">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-        </div>
-        <p>"Sangat bagus! Rasanya lembut dan manisnya pas!"</p>
-        <div class="user mt-3 d-flex align-items-center justify-content-center gap-3">
-          <img src="{{ asset('images/salma.jpeg') }}" alt="User 1" class="rounded-circle" width="60" height="60">
-          <div>
-            <h5 class="mb-0">Alfina</h5>
-            <small class="text-muted">Happy Customer</small>
-          </div>
-        </div>
-      </div>
-    </div>
+          <!-- Testimoni 3 -->
+          <li class="testimonial">
+            <img src="{{asset('images/salma3.jpeg')}}" alt="User" class="user-image">
+            <h3 class="name">Carissa Nur</h3>
+            <i class="feedback">"Desain kuenya lucu banget, cocok buat hadiah!"</i>
+          </li>
 
-    <!-- Review 4 -->
-    <div class="col-md-4 mb-4 d-flex">
-      <div class="review-box p-4 shadow rounded flex-fill">
-        <div class="stars mb-2">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="far fa-star"></i>
-        </div>
-        <p>"Tempatnya bersih, pelayanannya ramah banget!"</p>
-        <div class="user mt-3 d-flex align-items-center justify-content-center gap-3">
-          <img src="{{ asset('images/salma 2.jpeg') }}" alt="User 2" class="rounded-circle" width="60" height="60">
-          <div>
-            <h5 class="mb-0">Dina</h5>
-            <small class="text-muted">Cake Lover</small>
-          </div>
-        </div>
-      </div>
-    </div>
+          <!-- Testimoni 4 -->
+          <li class="testimonial">
+            <img src="{{asset('images/salma.jpeg')}}" alt="User" class="user-image">
+            <h3 class="name">Salmine Bakery</h3>
+            <i class="feedback">"Best seller banget! Semua suka browniesnya."</i>
+          </li>
 
-    <!-- Review 5-->
-    <div class="col-md-4 mb-4 d-flex">
-      <div class="review-box p-4 shadow rounded flex-fill">
-        <div class="stars mb-2">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-          <i class="far fa-star"></i>
-        </div>
-        <p>"Kue-nya lembut banget, topping-nya juga melimpah!"</p>
-        <div class="user mt-3 d-flex align-items-center justify-content-center gap-3">
-          <img src="{{ asset('images/salma3.jpeg') }}" alt="User 3" class="rounded-circle" width="60" height="60">
-          <div>
-            <h5 class="mb-0">Lina</h5>
-            <small class="text-muted">Sweet Lover</small>
-          </div>
-        </div>
+        </ul>
       </div>
     </div>
   </div>
 </div>
-  </div>
-</div>
+    </div>
+</section>
 
-
-  <footer class="footer mt-5 py-5">
+  <footer class="footer py-5 text-white">
   <div class="container-fluid px-5">
-    <div class="row text-white justify-content-between">
+    <div class="row justify-content-between">
       
       <!-- Kolom 1 -->
       <div class="col-md-4 mb-3">
@@ -265,10 +182,10 @@
       <div class="col-md-3 mb-3">
         <h5 class="fw-bold">Menu</h5>
         <ul class="list-unstyled mt-3">
-          <li><a href="#" class="footer-link">Home</a></li>
-          <li><a href="#" class="footer-link">About us</a></li>
-          <li><a href="#" class="footer-link">Produk</a></li>
-          <li><a href="#" class="footer-link">FAQ</a></li>
+          <li><a href="#" class="footer-link text-white text-decoration-none">Home</a></li>
+          <li><a href="#" class="footer-link text-white text-decoration-none">About us</a></li>
+          <li><a href="#" class="footer-link text-white text-decoration-none">Produk</a></li>
+          <li><a href="#" class="footer-link text-white text-decoration-none">FAQ</a></li>
         </ul>
       </div>
 
@@ -276,17 +193,17 @@
       <div class="col-md-3 mb-3">
         <h5 class="fw-bold">Contact</h5>
         <ul class="list-unstyled mt-3">
-          <li><a href="#" class="footer-link">Contact Us</a></li>
-          <li><a href="#" class="footer-link">Location Us</a></li>
+          <li><a href="#" class="footer-link text-white text-decoration-none">Contact Us</a></li>
+          <li><a href="#" class="footer-link text-white text-decoration-none">Location Us</a></li>
         </ul>
 
         <div class="social-icons mt-3">
-          <a href="#" class="me-3"><i class="fab fa-tiktok"></i></a>
-          <a href="#" class="me-3"><i class="fab fa-whatsapp"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="me-3 text-white"><i class="fab fa-tiktok"></i></a>
+          <a href="#" class="me-3 text-white"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
-      
+
     </div>
   </div>
 </footer>
