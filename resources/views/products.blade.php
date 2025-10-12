@@ -3,9 +3,7 @@
 @section('content')
      <div class="products">
         <div class="products-text">
-            <h1 class="text-4xl font-bold text-blue-500 text-center mt-10">
-                Halo, Tailwind 4 sudah aktif! 💨
-              </h1>
+          <h2>Our Product</h2>
         <div class="btn-products">
             <a href="" class="btn">Birthday cake</a>
             <a href="" class="btn">Brownies</a>

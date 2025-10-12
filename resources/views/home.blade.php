@@ -2,129 +2,145 @@
 
 @section('content')
 
+ 
+    {{--banner--}}
+    <section class="banner">
     <div class="slider-container">
-        <div class="wrapper">
-            <div class="wrapper-holder">
-                <div id="slider-img-1"></div>
-                <div id="slider-img-2"></div>
-                <div id="slider-img-3"></div>
-                <div id="slider-img-4"></div>
-            </div>
-        </div>
-    
-            <div class="button-holder">
-            <a href="#slider-img-1" class="button"></a>
-            <a href="#slider-img-2" class="button"></a> 
-            <a href="#slider-img-3" class="button"></a>
-            <a href="#slider-img-4" class="button"></a>
-                  
-            </div>
-        </div>
-    <!--Hero Section-->
-<div class="hero">
-    <div class="hero-text">
-        <h2>
-            <span style="color: #5a3b00" data-aos="fade-down" data-aos-duration="2500">SWEET BITE </span><br> 
-            <span style="color: #e1a22c" data-aos="fade-down" data-aos-duration="2500">CAKE & COOKIES</span>
-        </h2>
-        <p> SweetBite Cakes & Cookies — pusat kue ulang tahun, aneka cake, bolu, <br>dan roti setiap hari. 
-            Praktis, lezat, dan cocok untuk semua perayaan.</p>
-        </div>
-        <div class="hero-img"> 
-            <h3 data-aos="fade-down" data-aos-duration="2500"> "Handmade with love <br> Tasted with joy." </h3> 
-            <img src="{{ asset('images/toko.jpeg') }}" alt="toko" class="float-img">
-    </div>
-    </div>
-</div>
-
+      <div class="wrapper">
+          <div class="wrapper-holder">
+              <div id="slider-img-1"></div>
+              <div id="slider-img-2"></div>
+              <div id="slider-img-3"></div>
+              <div id="slider-img-4"></div>
+          </div>
+      </div>
   
-<!--Kategori-->
-<div class="kategori">
-  <div class="container-fluid mt-3">
-    <div class="kategori-text">
-        <h1>K <span> A<span> T<span> E<span> G <span>O <span>R <span> I</span> </h1>
+          <div class="button-holder">
+          <a href="#slider-img-1" class="button"></a>
+          <a href="#slider-img-2" class="button"></a> 
+          <a href="#slider-img-3" class="button"></a>
+          <a href="#slider-img-4" class="button"></a>
+                
+          </div>
+      </div>
+    </section>
+
+  <!--Hero Section-->
+<div class="hero">
+  <div class="hero-text">
+      <h2>
+        <span style="color: #5a3b00">SWEET BITE </span><br> 
+        <span style="color: #e1a22c">CAKE&COOKIES</span>
+      </h2>
+      <p>
+        SweetBite Cakes & Cookies — pusat kue ulang tahun, aneka cake, bolu, <br>
+        dan roti setiap hari. Praktis, lezat, dan cocok untuk semua perayaan.
+      </p>
     </div>
-
-    <div class="row">
-        <!-- Birthday Cake -->
-        <div class="col-md-4 mb-4">
-            <div class="custom-card card shadow-sm">
-              <img src="{{ asset('images/birthdaycake.jpeg') }}" class="card-img-top" alt="Birthday Cake">
-              <div class="card-body text-center">
-                <h5>Birthday Cake</h5>
-              </div>
-            </div>
-        </div>
-
-        <!-- Brownies -->
-        <div class="col-md-4 mb-4">
-            <div class="custom-card card shadow-sm">
-              <img src="{{ asset('images/brownies.jpeg') }}" class="card-img-top" alt="Brownies">
-              <div class="card-body text-center">
-                <h5 class="card-title">Brownies</h5>
-              </div>
-            </div>
-        </div>
-
-        <!-- Bento Cake -->
-        <div class="col-md-4 mb-4">
-            <div class="custom-card card shadow-sm">
-              <img src="{{ asset('images/bentocake.jpeg') }}" class="card-img-top" alt="Bento Cake">
-              <div class="card-body text-center">
-                <h5 class="card-title">Bento Cake</h5>
-              </div>
-            </div>
-        </div>
-
-        <!-- Bolu -->
-        <div class="col-md-4 mb-4">
-            <div class="custom-card card shadow-sm">
-              <img src="{{ asset('images/bolu.jpeg') }}" class="card-img-top" alt="Bolu">
-              <div class="card-body text-center">
-                <h5 class="card-title">Bolu</h5>
-              </div>
-            </div>
-        </div>
-
-        <!-- Dessertbox -->
-        <div class="col-md-4 mb-4">
-            <div class="custom-card card shadow-sm">
-              <img src="{{ asset('images/desertbox.jpeg') }}" class="card-img-top" alt="Dessertbox">
-              <div class="card-body text-center">
-                <h5 class="card-title">Dessert box</h5>
-              </div>
-            </div>
-        </div>
-
-        <!-- Dry Cake -->
-        <div class="col-md-4 mb-4">
-            <div class="custom-card card shadow-sm">
-              <img src="{{ asset('images/nastar.jpeg') }}" class="card-img-top" alt="Dry Cake">
-              <div class="card-body text-center">
-                <h5 class="card-tittle">Dry Cake</h5>
-              </div>
-            </div>
-        </div>
+  
+    <div class="hero-img"> 
+      <h3>"Handmade with love <br> Tasted with joy."</h3> 
+      <img src="{{ asset('images/toko.jpeg') }}" alt="toko" class="float-img">
     </div>
   </div>
-</div>
 
-<div class="kategori">
-  <div class="container mt-3">
-    <div class="kategori-text">
-        <h1>R<span> E<span> V<span> I<span> E <span>W  </h1>
-          <div class="underline"></div>
+  {{--kategori--}}
+  <section class="kategori">
+  <div class="kategori">
+  <div class="container-py-5">
+    <div class="row align-items-center">
+
+    <div class="col-md-3 mb-4 mb-md-0">
+      <h2>Kategori</h2>
     </div>
 
+      <div class="col-md-9">
+        <div id="multiCardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+         <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="{{ asset('images/birthdaycake.jpeg') }}" alt="">
+                <div class="card-body">
+                  <h5 class="card-tittle">Birthday Cake</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="{{ asset('images/brownies.jpeg') }}" alt="">
+                <div class="card-body">
+                  <h5 class="card-tittle">Brownies</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="{{ asset('images/bentocake.jpeg') }}" alt="">
+                <div class="card-body">
+                  <h5 class="card-tittle">Bento Cake</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+
+         <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row justify-items-center">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="{{ asset('images/bolu.jpeg') }}" alt="">
+                <div class="card-body">
+                  <h5 class="card-tittle">Bolu</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="{{ asset('images/desertbox.jpeg') }}" alt="">
+                <div class="card-body">
+                  <h5 class="card-tittle">Dessert Box</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="{{ asset('images/nastar.jpeg') }}" alt="">
+                <div class="card-body">
+                  <h5 class="card-tittle">Dry Cake</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         </div>
+         <!-- Tombol navigasi -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#multiCardCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#multiCardCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      
+    </div>
+  </div>
+    </div>
+    </div>
+  </section>
+
+<div class="review">
+  <div class="container mt-3">
     <div class="container my-5">
-  
   <div class="row text-center justify-content-center align-items-stretch">
-  
-    
     <!-- Review /testimoni -->
     <!-- Bagian Testimonials -->
 <section class="testimonials-section">
-  <h2 class="section-title"></h2>
+  <h1 class="section-title">R<span> E<span> V<span> I<span> E <span>W  </span></h1>
   <div class="section-content">
     <div class="slider-container">
       <div class="slider-wrapper">
@@ -161,55 +177,10 @@
         </ul>
       </div>
     </div>
-  </div>
-</div>
-    </div>
-</section>
+    </section>
+ 
+  
 
-  <footer class="footer py-5 text-white">
-  <div class="container-fluid px-5">
-    <div class="row justify-content-between">
-      
-      <!-- Kolom 1 -->
-      <div class="col-md-4 mb-3">
-        <h5 class="fw-bold">SWEET BITE CAKE</h5>
-        <p class="mt-3">
-          "Nikmati kue lembut dengan bahan berkualitas, desain cantik, dan rasa manis pas, cocok untuk hadiah maupun momen istimewa."
-        </p>
-      </div>
-
-      <!-- Kolom 2 -->
-      <div class="col-md-3 mb-3">
-        <h5 class="fw-bold">Menu</h5>
-        <ul class="list-unstyled mt-3">
-          <li><a href="#" class="footer-link text-white text-decoration-none">Home</a></li>
-          <li><a href="#" class="footer-link text-white text-decoration-none">About us</a></li>
-          <li><a href="#" class="footer-link text-white text-decoration-none">Produk</a></li>
-          <li><a href="#" class="footer-link text-white text-decoration-none">FAQ</a></li>
-        </ul>
-      </div>
-
-      <!-- Kolom 3 -->
-      <div class="col-md-3 mb-3">
-        <h5 class="fw-bold">Contact</h5>
-        <ul class="list-unstyled mt-3">
-          <li><a href="#" class="footer-link text-white text-decoration-none">Contact Us</a></li>
-          <li><a href="#" class="footer-link text-white text-decoration-none">Location Us</a></li>
-        </ul>
-
-        <div class="social-icons mt-3">
-          <a href="#" class="me-3 text-white"><i class="fab fa-tiktok"></i></a>
-          <a href="#" class="me-3 text-white"><i class="fab fa-whatsapp"></i></a>
-          <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</footer>
-
-       
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
