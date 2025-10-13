@@ -38,8 +38,9 @@
                   <a class="nav-link active" aria-current="page" href="{{ route('products') }}">Product</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Location</a>
+                  <a class="nav-link" href="{{ route('location') }}">Location</a>
                 </li>
+
                 <li class="nav-item">
                   <a class="nav-link" href="#">Order</a>
                 </li>
@@ -79,7 +80,7 @@
               <h5 class="fw-bold">Contact</h5>
               <ul class="list-unstyled mt-3">
                 <li><a href="#" class="footer-link text-white text-decoration-none">Contact Us</a></li>
-                <li><a href="#" class="footer-link text-white text-decoration-none">Location Us</a></li>
+                <li><a href="{{ route('location') }}" class="footer-link text-white text-decoration-none">Location Us</a></li>
               </ul>
       
               <div class="social-icons mt-3">
