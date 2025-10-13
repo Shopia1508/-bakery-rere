@@ -7,17 +7,8 @@
 
 
     {{--boostrap--}}
-    <link rel="stylesheet" href="https://cdn.jsdeliv r.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
    
     {{--css--}} 
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -27,11 +18,7 @@
 
     {{--font--}}
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-
-    {{-- tailwind --}}
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-    
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -43,20 +30,70 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('products') }}">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('location') }}">Location</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('order') }}">Order</a></li>
-                </ul>
-            </div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
+                  </li>
+                <li class="nav-item" >
+                  <a class="nav-link active" aria-current="page" href="{{ route('products') }}">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Location</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Order</a>
+                </li>
         </div>
     </nav>
     
 
-        @yield('content')
-     
+    
+    <main class="flex-grow-1">
+        <div class="wrapper">
+            @yield('content')
+        </div>
+    </main>
+    <footer class="footer py-5 text-white">
+        <div class="container-fluid px-5">
+          <div class="row justify-content-between">
+            <!-- Kolom 1 -->
+            <div class="col-md-4 mb-3">
+              <h5 class="fw-bold">SWEET BITE CAKE</h5>
+              <p class="mt-3">
+                "Nikmati kue lembut dengan bahan berkualitas, desain cantik, dan rasa manis pas, cocok untuk hadiah maupun momen istimewa."
+              </p>
+            </div>
+      
+            <!-- Kolom 2 -->
+            <div class="col-md-3 mb-3">
+              <h5 class="fw-bold">Menu</h5>
+              <ul class="list-unstyled mt-3">
+                <li><a href="#" class="footer-link text-white text-decoration-none">Home</a></li>
+                <li><a href="#" class="footer-link text-white text-decoration-none">About us</a></li>
+                <li><a href="#" class="footer-link text-white text-decoration-none">Produk</a></li>
+              </ul>
+            </div>
+      
+            <!-- Kolom 3 -->
+            <div class="col-md-3 mb-3">
+              <h5 class="fw-bold">Contact</h5>
+              <ul class="list-unstyled mt-3">
+                <li><a href="#" class="footer-link text-white text-decoration-none">Contact Us</a></li>
+                <li><a href="#" class="footer-link text-white text-decoration-none">Location Us</a></li>
+              </ul>
+      
+              <div class="social-icons mt-3">
+                <a href="#" class="me-3 text-white"><i class="bi bi-whatsapp"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </footer>
+      
+            
+   
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
     </html>
