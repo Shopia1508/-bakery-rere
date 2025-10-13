@@ -40,7 +40,7 @@
   
     <div class="hero-img"> 
       <h3>"Handmade with love <br> Tasted with joy."</h3> 
-      <img src="{{ asset('images/toko.jpeg') }}" alt="toko" class="float-img">
+      <img src="{{ asset('images/tocko.jpeg') }}" alt="toko" class="float-img">
     </div>
   </div>
 
