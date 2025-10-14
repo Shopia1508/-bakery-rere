@@ -17,3 +17,5 @@ Route::get('/location', function () {
 Route::get('/order', function () {
     return view('order');
 })->name('order');
+
+
