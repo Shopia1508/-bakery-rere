@@ -64,7 +64,6 @@ margin: 10px;
 border-radius: 20px;
 box-shadow: 0px 8px 24px #6d4c0f;
 }
-
 .hero-img h3 {
 font-size: 25px;
 font-family: 'Times New Roman', Times, serif;
@@ -72,9 +71,8 @@ text-align: center;
 }
 .slider-container{
 position: relative;
-margin-top: 0%;
 width: 100%;
-height: 100%;
+height: 80vh;
 overflow: hidden;
 }
 .slider-container .wrapper{
@@ -165,112 +163,6 @@ overflow: hidden;
     50% { transform: translateY(-20px); }
     100% { transform: translateY(0px); }
 } 
-  /*Kategori*/
-  .kategori {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-  }
-  .kategori text{
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  .kategori-text h1{
-    font-size: 50px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #000000;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    margin-bottom: 50px;
-}
-.kategori-text h1:hover{
-    border-bottom: 2px #5a3b00;
-}
-  .card-img-top{
-    width: 100%;
-    height: 280px;
-    border-radius: 2px;
-    object-fit: cover; 
-}
-  .custom-card {
-    border-radius: 200px;
-    width: 300px; 
-    height: auto; 
-    object-fit: cover; 
-    border-radius: 8px; 
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
-    cursor: pointer;
-    border: 1px solid #ffffff; 
-    box-shadow: 0 8px 12px rgb(127, 97, 33); 
-    margin-top: 50px;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-
-    
-}  
-  .custom-card:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 15px 15px rgba(78, 56, 25, 0.957); 
-    border: 4px solid #826124; 
-}
-.btn-products{
-    display: flex;
-    justify-content: center;
-    gap: 45px;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
-.btn-products a{
-    background-color: white;
-    padding: 10px 20px;
-    color: rgb(0, 0, 0);
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-    box-shadow: 0 0 0 2px  rgb(69, 53, 0);
-}
-.btn-products a:hover{
-    background: rgb(105, 76, 33);
-    color: rgb(255, 255, 255);
-    box-shadow: offset-x offset-y blur-radius spread-radius color;
-}
-.products-card{
- max-width: 12rem;
- background-color: #ffffff;
- padding: 1rem;
- box-shadow: 0 5px 5px #e1e1e1;
- font-family: Arial, Helvetica, sans-serif;   
-}
-.products-card img{
-    max-width: 100%;
-}
-.products-card h4{
-    font-size: 1.3rem;
-    margin: 0.5rem 0;
-}
-  .products-card div{
-    font-size: 1.2rem;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-  }
-  .kategori .row {
-    margin-left: 0;
-    margin-right: 0;
-    
-  }
-
- @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
-  100% { transform: translateY(0px); }
- }
-
 .kategori {
   padding: 40px 0;
   background: linear-gradient(135deg,  #ffe695, #ffcf70, #ffb347);

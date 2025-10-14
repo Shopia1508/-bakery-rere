@@ -54,6 +54,7 @@
             @yield('content')
         </div>
     </main>
+  </body>
     <footer class="footer py-5 text-white">
         <div class="container-fluid px-5">
           <div class="row justify-content-between">
@@ -96,5 +97,4 @@
             
    
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
     </html>

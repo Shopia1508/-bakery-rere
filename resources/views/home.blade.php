@@ -4,6 +4,7 @@
 
  
     {{--banner--}}
+    <section class="w-full pt-5 mt-2">
     <section class="banner">
     <div class="slider-container">
       <div class="wrapper">
@@ -24,6 +25,7 @@
           </div>
       </div>
     </section>
+  </section>
 
   <!--Hero Section-->
 <div class="hero">
@@ -43,27 +45,6 @@
       <img src="{{ asset('images/toko.jpeg') }}" alt="toko" class="float-img">
     </div>
   </div>
-
-<div class="kategori">
-  <div class="container mt-3">
-    <div class="kategori-text">
-        <h1>R<span> E<span> V<span> I<span> E <span>W  </h1>
-    </div>
-
-    <!-- Bagian Testimonials -->
-    <section class="testimonials-section">
-      <h2 class="section-title"></h2>
-      <div class="section-content">
-        <div class="slider-container">
-          <div class="slider-wrapper">
-            <ul class="testimonials-list">
-              
-              <!-- Testimoni 1 -->
-              <li class="testimonial">
-                <img src="{{asset('images/salma.jpeg')}}" alt="User" class="user-image">
-                <h3 class="name">Salma Salsabil</h3>
-                <i class="feedback">"Loved the brownies. Perfectly balanced and rich. Will order again."</i>
-              </li>
 
   {{--kategori--}}
   <section class="kategori">
@@ -204,15 +185,8 @@
   
 
        
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        </ul>
-      </div>
-    </div>
-    </section>
- 
   
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
     once: true,        
