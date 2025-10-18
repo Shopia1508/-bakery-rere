@@ -47,12 +47,8 @@
         </div>
     </nav>
     
-
-    
-    <main class="flex-grow-1">
-        <div class="wrapper">
-            @yield('content')
-        </div>
+    <main class="container-fluid p-0 m-0">
+      @yield('content')
     </main>
   </body>
     <footer class="footer py-5 text-white">
@@ -86,13 +82,9 @@
       
               <div class="social-icons mt-3">
                 <a href="#" class="me-3 text-white"><i class="bi bi-whatsapp"></i></a>
-                <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>  
+                <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
               </div>
-              <a href="#" class="text-white"><i class="bi bi-file-earmark-check"></i></a>
             </div>
-
-            <!-- kolom 4 -->
-            <div class="col-md-3 mb-3"></div>
       
           </div>
         </div>
@@ -101,4 +93,5 @@
             
    
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
     </html>
