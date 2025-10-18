@@ -15,7 +15,8 @@
   </div>
 
   <!-- Tempat tampil produk -->
-  <div id="product-list" class="product-list" style="display:grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap:20px; margin-top:20px;"></div>
+  <div id="product-list" class="product-list"></div>
+
 </div>
 
 <!-- Script ambil data dari API -->

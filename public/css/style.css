@@ -384,6 +384,14 @@ text-align: center;
   box-sizing: border-box;
 }
 
+.footer.footer {
+  width: 100%;
+  margin: 0;
+  padding: 50px 0;
+  background: linear-gradient(135deg, #a86a10, #cf8f31, #f0b44a);
+  color: #fff;
+  box-sizing: border-box;
+}
 
 .footer .container-fluid {
   width: 100%;
@@ -391,148 +399,150 @@ text-align: center;
   margin: 0;
   padding: 0; 
   margin-top: 20px;
-  .products {
-    padding: 60px 8%;
-    background: #fffaf0;
-    font-family: "Montserrat", sans-serif;
+}
+
+/* ===== PRODUK SECTION (pindahin ke luar, bukan di dalam footer) ===== */
+.products {
+  padding: 60px 8%;
+  background: #fffaf0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.products-text h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #4b2c0a;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.products-text h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #c0862b;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.btn-products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.btn-products .btn {
+  background: linear-gradient(135deg, #d49c3d, #8b5a20);
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-products .btn:hover {
+  background: linear-gradient(135deg, #e0b55b, #744b12);
+  transform: translateY(-3px);
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.products-card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(150, 100, 40, 0.2);
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.3s ease;
+  max-width: 260px;
+  padding: 15px;
+}
+
+.products-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(150, 100, 40, 0.3);
+}
+
+.products-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.products-card h4 {
+  margin: 12px 0 6px;
+  color: #3a2c0a;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.products-card p {
+  color: #555;
+  font-size: 0.9rem;
+  height: 40px;
+  overflow: hidden;
+}
+
+.price-add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.price-add span {
+  color: #4b2c0a;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.price-add button {
+  background: linear-gradient(135deg, #ffb347, #ff7e00);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.price-add button:hover {
+  background: linear-gradient(135deg, #ffa12c, #e26900);
+}
+
+.no-products {
+  text-align: center;
+  color: #6b4a12;
+  font-size: 1rem;
+  margin-top: 40px;
+}
+
+/* ✨ Animasi halus saat produk muncul */
+.fade-in {
+  animation: fadeInUp 0.6s ease both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  .products-text h2 {
-    text-align: center;
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #4b2c0a;
-    position: relative;
-    margin-bottom: 40px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .products-text h2::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 4px;
-    background: #c0862b;
-    margin: 10px auto 0;
-    border-radius: 2px;
-  }
-  
-  .btn-products {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-bottom: 40px;
-  }
-  
-  .btn-products .btn {
-    background: linear-gradient(135deg, #d49c3d, #8b5a20);
-    color: #fff;
-    border: none;
-    padding: 8px 18px;
-    font-size: 16px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .btn-products .btn:hover {
-    background: linear-gradient(135deg, #e0b55b, #744b12);
-    transform: translateY(-3px);
-  }
-  
-  .product-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 25px;
-    justify-items: center;
-  }
-  
-  .products-card {
-    background: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 6px 16px rgba(150, 100, 40, 0.2);
-    overflow: hidden;
-    text-align: center;
-    transition: all 0.3s ease;
-    max-width: 260px;
-    padding: 15px;
-  }
-  
-  .products-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 20px rgba(150, 100, 40, 0.3);
-  }
-  
-  .products-card img {
-    width: 100%;
-    height: 170px;
-    object-fit: cover;
-    border-radius: 12px;
-  }
-  
-  .products-card h4 {
-    margin: 12px 0 6px;
-    color: #3a2c0a;
-    font-size: 1.1rem;
-    font-weight: 600;
-  }
-  
-  .products-card p {
-    color: #555;
-    font-size: 0.9rem;
-    height: 40px;
-    overflow: hidden;
-  }
-  
-  .price-add {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
-  }
-  
-  .price-add span {
-    color: #4b2c0a;
-    font-weight: bold;
-    font-size: 1rem;
-  }
-  
-  .price-add button {
-    background: linear-gradient(135deg, #ffb347, #ff7e00);
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .price-add button:hover {
-    background: linear-gradient(135deg, #ffa12c, #e26900);
-  }
-  
-  .no-products {
-    text-align: center;
-    color: #6b4a12;
-    font-size: 1rem;
-    margin-top: 40px;
-  }
-  
-  /* ✨ Animasi halus saat produk muncul */
-  .fade-in {
-    animation: fadeInUp 0.6s ease both;
-  }
-  
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-}  
+}
