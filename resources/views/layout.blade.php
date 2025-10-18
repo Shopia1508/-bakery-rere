@@ -86,9 +86,13 @@
       
               <div class="social-icons mt-3">
                 <a href="#" class="me-3 text-white"><i class="bi bi-whatsapp"></i></a>
-                <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>  
               </div>
+              <a href="#" class="text-white"><i class="bi bi-file-earmark-check"></i></a>
             </div>
+
+            <!-- kolom 4 -->
+            <div class="col-md-3 mb-3"></div>
       
           </div>
         </div>
