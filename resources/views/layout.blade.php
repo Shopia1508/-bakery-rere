@@ -47,54 +47,52 @@
         </div>
     </nav>
     
-
-    
-    <main class="flex-grow-1">
-        <div class="wrapper">
-            @yield('content')
-        </div>
+    <main class="container-fluid p-0 m-0">
+      @yield('content')
     </main>
-  </body>
-    <footer class="footer py-5 text-white">
-        <div class="container-fluid px-5">
-          <div class="row justify-content-between">
-            <!-- Kolom 1 -->
-            <div class="col-md-4 mb-3">
-              <h5 class="fw-bold">SWEET BITE CAKE</h5>
-              <p class="mt-3">
-                "Nikmati kue lembut dengan bahan berkualitas, desain cantik, dan rasa manis pas, cocok untuk hadiah maupun momen istimewa."
-              </p>
-            </div>
-      
-            <!-- Kolom 2 -->
-            <div class="col-md-3 mb-3">
-              <h5 class="fw-bold">Menu</h5>
-              <ul class="list-unstyled mt-3">
-                <li><a href="#" class="footer-link text-white text-decoration-none">Home</a></li>
-                <li><a href="#" class="footer-link text-white text-decoration-none">About us</a></li>
-                <li><a href="#" class="footer-link text-white text-decoration-none">Produk</a></li>
-              </ul>
-            </div>
-      
-            <!-- Kolom 3 -->
-            <div class="col-md-3 mb-3">
-              <h5 class="fw-bold">Contact</h5>
-              <ul class="list-unstyled mt-3">
-                <li><a href="#" class="footer-link text-white text-decoration-none">Contact Us</a></li>
-                <li><a href="{{ route('location') }}" class="footer-link text-white text-decoration-none">Location Us</a></li>
-              </ul>
-      
-              <div class="social-icons mt-3">
-                <a href="#" class="me-3 text-white"><i class="bi bi-whatsapp"></i></a>
-                <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
-              </div>
-            </div>
-      
+  
+      <!-- Footer -->
+  <footer class="footer py-5 text-white mt-0">
+    <div class="container px-4">
+      <div class="row justify-content-between">
+        <!-- Kolom 1 -->
+        <div class="col-md-4 mb-3">
+          <h5 class="fw-bold">SWEET BITE CAKE</h5>
+          <p class="mt-3">
+            "Nikmati kue lembut dengan bahan berkualitas, desain cantik, dan rasa manis pas,
+            cocok untuk hadiah maupun momen istimewa."
+          </p>
+        </div>
+
+        <!-- Kolom 2 -->
+        <div class="col-md-3 mb-3">
+          <h5 class="fw-bold">Menu</h5>
+          <ul class="list-unstyled mt-3">
+            <li><a href="{{ route('home') }}" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-white text-decoration-none">About us</a></li>
+            <li><a href="{{ route('products') }}" class="text-white text-decoration-none">Produk</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom 3 -->
+        <div class="col-md-3 mb-3">
+          <h5 class="fw-bold">Contact</h5>
+          <ul class="list-unstyled mt-3">
+            <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+            <li><a href="{{ route('location') }}" class="text-white text-decoration-none">Location Us</a></li>
+          </ul>
+
+          <div class="social-icons mt-3">
+            <a href="#" class="me-3 text-white"><i class="bi bi-whatsapp"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
           </div>
         </div>
-      </footer>
+      </div>
+    </div>
+  </footer>
       
             
    
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
     </html>

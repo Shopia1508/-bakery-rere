@@ -49,6 +49,7 @@ class ProductSeeder extends Seeder
                 'image' => 'oreo-crunch-cake.jpg',
             ],
 
+
             //brownies
 
             [
@@ -142,46 +143,38 @@ class ProductSeeder extends Seeder
             //dessert box
 
               [
-                'name' => 'Sweet Pastel Bento Cake',
-                'category' => 'Bento Cake',
-                'description' => 'Mini cake berwarna pastel dengan krim lembut dan desain minimalis yang cantik.',
+                'name' => 'Nutela Dessert Box',
+                'category' => 'Dessert Box',
+                'description' => 'Dessert box lembut berlapis krim Nutella yang lumer dengan tampilan minimalis.',
                 'price' => 30000,
-                'image' => 'sweet-pastel-bento-cake.jpg',
+                'image' => 'nutela-dessert-box.jpg',
             ],
             [
-                'name' => 'Chocolate Dream Bento Cake',
-                'category' => 'Bento Cake',
-                'description' => 'Bento cake cokelat dengan rasa fudgy dan topping ganache lembut.',
+                'name' => 'Choco Oreo Box',
+                'category' => 'Dessert Box',
+                'description' => 'Lapisan cokelat creamy berpadu remahan Oreo renyah.',
                 'price' => 32000,
-                'image' => 'chocolate-dream-bento-cake.jpg',
+                'image' => 'choco-oreo-box.jpg',
             ],
             [
-                'name' => 'Strawberry Bliss Bento Cake',
-                'category' => 'Bento Cake',
-                'description' => 'Cake lembut dengan krim stroberi segar dan hiasan buah di atasnya.',
+                'name' => 'Strawberry Cheesecake Box',
+                'category' => 'Dessert Box',
+                'description' => 'Krim keju lembut dengan saus stroberi segar di atasnya.',
                 'price' => 33000,
-                'image' => 'strawberry-bliss-bento-cake.jpg',
+                'image' => 'strawberry-chessecake-box.jpg',
             ],
             [
-                'name' => 'Blueberry Cream Bento Cake',
-                'category' => 'Bento Cake',
-                'description' => 'Perpaduan krim vanilla lembut dan selai blueberry homemade yang manis-asam.',
+                'name' => 'Tiramisu Bliss Box',
+                'category' => 'Dessert Box',
+                'description' => 'Rasa kopi lembut dengan krim mascarpone yang ringan.',
                 'price' => 34000,
-                'image' => 'blueberry-cream-bento-cake.jpg',
+                'image' => 'tiramisu-bliss-box.jpg',
             ],
             [
-                'name' => 'Matcha Harmony Bento Cake',
-                'category' => 'Bento Cake',
-                'description' => 'Cake matcha wangi dengan buttercream lembut dan sentuhan cokelat putih.',
-                'price' => 35000,
-                'image' => 'matcha-harmony-bento-cake.jpg',
-            ],
-            [
-                'name' => 'Red Velvet Love Bento Cake',
-                'category' => 'Bento Cake',
-                'description' => 'Bento cake red velvet dengan cream cheese frosting yang lembut dan nikmat.',
-                'price' => 36000,
-                'image' => 'red-velvet-love-bento-cake.jpg',
+                'name' => 'Red Velvet Cream Box',
+                'category' => 'Dessert Box',
+                'description' => 'Red velvet moist dengan krim keju lembut dan tampilan elegan.',
+                'image' => 'red-velvet-cream-box.jpg',
             ],
 
             //bolu
