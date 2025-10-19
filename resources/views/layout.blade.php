@@ -66,9 +66,9 @@
             <div class="col-md-3 mb-3">
               <h5 class="fw-bold">Menu</h5>
               <ul class="list-unstyled mt-3">
-                <li><a href="#" class="footer-link text-white text-decoration-none">Home</a></li>
-                <li><a href="#" class="footer-link text-white text-decoration-none">About us</a></li>
-                <li><a href="#" class="footer-link text-white text-decoration-none">Produk</a></li>
+                <li><a href="{{ route('home') }}" class="footer-link text-white text-decoration-none">Home</a></li>
+                <li><a href="{{ route('about') }}" class="footer-link text-white text-decoration-none">About Us</a></li>
+                <li><a href="{{ route('products') }}" class="footer-link text-white text-decoration-none">Products</a></li>
               </ul>
             </div>
       
@@ -76,16 +76,18 @@
             <div class="col-md-3 mb-3">
               <h5 class="fw-bold">Contact</h5>
               <ul class="list-unstyled mt-3">
-                <li><a href="#" class="footer-link text-white text-decoration-none">Contact Us</a></li>
                 <li><a href="{{ route('location') }}" class="footer-link text-white text-decoration-none">Location Us</a></li>
               </ul>
       
               <div class="social-icons mt-3">
-                <a href="#" class="me-3 text-white"><i class="bi bi-whatsapp"></i></a>
-                <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
-              </div>
+              <a href="https://wa.me/6285709446175" target="_blank" class="me-3 text-white">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+              <a href="https://www.instagram.com/rerecake_cookies/" target="_blank" class="text-white">
+                <i class="bi bi-instagram"></i>
+              </a>
             </div>
-      
+
           </div>
         </div>
       </footer>
@@ -93,5 +95,18 @@
             
    
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+     <!-- AOS JS -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+       AOS.init({
+         duration: 1000,
+         once: true,
+         easing: 'ease-in-out',
+       });
+     </script>
+    
+     </html>
     </body>
     </html>
+

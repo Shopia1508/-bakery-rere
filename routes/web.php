@@ -19,6 +19,10 @@ Route::get('/order', function () {
     return view('order');
 })->name('order');
 
+Route::get('/about', function () {
+    return view ('about');
+})->name('about');
+
 
 Route::get('/order', [ControllerOrder::class, 'create'])->name('order'); // Form input
 Route::post('/order', [ControllerOrder::class, 'store'])->name('order.store'); // Simpan data
