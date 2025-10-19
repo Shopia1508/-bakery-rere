@@ -18,4 +18,8 @@ Route::get('/order', function () {
     return view('order');
 })->name('order');
 
+Route::get('/about', function () {
+    return view ('about');
+})->name('about');
+
 

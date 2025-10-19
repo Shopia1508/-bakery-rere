@@ -439,4 +439,9 @@ footer.footer {
      }
   }
 
+  .social-icons a {
+  text-decoration: none;
+}
+
+
 
