@@ -35,10 +35,10 @@
 <div class="hero">
   <div class="hero-text">
     <h2>
-      <span style="color: #5a3b00">SWEET BITE </span><br>
-      <span style="color: #e1a22c">CAKE &COOKIES</span>
+      <span style="color: #5a3b00" data-aos="fade-right">SWEET BITE </span><br>
+      <span style="color: #e1a22c" data-aos="fade-right">CAKE &COOKIES</span>
     </h2>
-    <p>
+    <p data-aos="zoom-in-up">
       SweetBite Cakes & Cookies — pusat kue ulang tahun, aneka cake, bolu, <br>
       dan roti setiap hari. Praktis, lezat, dan cocok untuk semua perayaan.
     </p>
@@ -53,7 +53,7 @@
 {{-- Service --}}
 <section class="sec service" id="services">
   <div class="head">
-    <h1 class="heading_1">Our service</h1>
+    <h1 class="heading_1" data-aos="fade-down">Our service</h1>
   </div>
   <div class="boxes">
     <div class="box">
@@ -79,7 +79,8 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-3 mb-4 mb-md-0">
-        <h2>Kategori</h2>
+        <h2 data-aos="fade-right">Kategori</h2>
+
       </div>
 
       <div class="col-md-9">
@@ -164,7 +165,7 @@
 
 {{-- Review --}}
 <section class="testimonials-section">
-  <h1 class="section-title">R<span>E</span>V<span>I</span>E<span>W</span></h1>
+  <h1 class="section-title" data-aos="fade-up"   data-aos-offset="200" data-aos-duration="1000">R<span>E</span>V<span>I</span>E<span>W</span></h1>
   <div class="section-content">
     <div class="slider-container">
       <div class="slider-wrapper">

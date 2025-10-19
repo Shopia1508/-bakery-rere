@@ -45,21 +45,20 @@ function showProducts(data) {
     container.innerHTML = '<p class="text-align:center;">Tidak ada produk di kategori ini.</p>';
     return;
   }
-
-
   data.forEach(product => {
-    container.innerHTML += `
-      <div class="products-card fade-in">
-        <img src="/storage/${product.image}" alt="${product.name}">
-        <h4>${product.name}</h4>
-        <p>${product.description}</p>
-        <div class="price-add">
-          <span><strong>Rp ${product.price}</strong></span>
-          <button>+</button>
-        </div>
+  container.innerHTML += `
+    <div class="products-card fade-in">
+      <img src="/images/${product.image}" alt="${product.name}">
+      <h4>${product.name}</h4>
+      <p>${product.description}</p>
+      <div class="price-add">
+        <span><strong>Rp ${product.price}</strong></span>
+        <button>+</button>
       </div>
-    `;
-  });
+    </div>
+  `;
+});
+
 }
 </script>
 @endsection

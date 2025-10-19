@@ -3,8 +3,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
+  background-color:#fffaf0;
   overflow-x: hidden;
+  padding-top: 10px;
 }
 .navbar-custom{
   display: flex;
@@ -68,8 +69,10 @@ box-shadow: 0px 8px 24px #6d4c0f;
 }
 .hero-img h3 {
 font-size: 25px;
-font-family: 'Times New Roman', Times, serif;
+font-family: "Montserrat", sans-serif;
 text-align: center;
+margin-bottom: 20px;
+color: #333333;
 }
 
 .banner {
@@ -179,6 +182,7 @@ text-align: center;
   border: 2px solid transparent;
   margin-top: 20px;
   border-radius: 12px;
+  background-color: #fff;
 }
 .box img{
   width: 150px;
@@ -338,7 +342,7 @@ text-align: center;
   flex: 0 0 300px; 
   background-color: #90763e;
   flex: 0 0 280px; 
-  background: linear-gradient(135deg,  #ffe695, #ffcf70, #ffb347);
+background-color: #fff;
   border-radius: 20px;
   padding: 30px 20px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.08);
@@ -400,8 +404,6 @@ text-align: center;
   padding: 0; 
   margin-top: 20px;
 }
-
-/* ===== PRODUK SECTION (pindahin ke luar, bukan di dalam footer) ===== */
 .products {
   padding: 60px 8%;
   background: #fffaf0;
@@ -411,105 +413,94 @@ text-align: center;
 .products-text h2 {
   text-align: center;
   font-size: 2.2rem;
-  font-weight: 700;
-  color: #4b2c0a;
-  position: relative;
   margin-bottom: 40px;
+  position: relative; 
+  text-align: center;
+  margin-top: 50px;
+  color: #4b2c0a;
 }
+
 
 .products-text h2::after {
   content: "";
   display: block;
   width: 80px;
   height: 4px;
-  background: #c0862b;
-  margin: 10px auto 0;
-  border-radius: 2px;
+  background-color:#c0862b;
+ margin: 10px auto 0;
+ border-radius: 2px;
 }
-
-.btn-products {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-bottom: 40px;
+.btn-products{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 40px;
 }
-
-.btn-products .btn {
-  background: linear-gradient(135deg, #d49c3d, #8b5a20);
-  color: #fff;
-  border: none;
-  padding: 8px 18px;
-  font-size: 16px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.btn-products .btn{
+   background: linear-gradient(135deg, #d49c3d, #8b5a20);
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3 ease;
 }
-
-.btn-products .btn:hover {
-  background: linear-gradient(135deg, #e0b55b, #744b12);
-  transform: translateY(-3px);
+.btn-products .btn:hover{
+   background: linear-gradient(135deg, #e0b55b, #744b12);
+   transform: translateY(-3px);
 }
-
-.product-list {
+.product-list{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 25px;
   justify-items: center;
 }
-
-.products-card {
-  background: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 6px 16px rgba(150, 100, 40, 0.2);
-  overflow: hidden;
-  text-align: center;
-  transition: all 0.3s ease;
-  max-width: 260px;
-  padding: 15px;
+.products-card{
+ background: #ffffff;
+ border-radius: 15px;
+ box-shadow: 0 6px 16px rgba(150, 100, 40, 0.2);
+ overflow: hidden;
+ text-align: center;
+ transition: all 0.3s ease;
+ max-width: 260px;
+ padding: 15px;  
 }
-
-.products-card:hover {
+.products-card:hover{
   transform: translateY(-6px);
   box-shadow: 0 10px 20px rgba(150, 100, 40, 0.3);
 }
-
-.products-card img {
-  width: 100%;
-  height: 170px;
-  object-fit: cover;
-  border-radius: 12px;
+.products-card img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 12px;
 }
-
-.products-card h4 {
-  margin: 12px 0 6px;
-  color: #3a2c0a;
-  font-size: 1.1rem;
-  font-weight: 600;
+.products-card h4{
+     margin: 12px 0 6px;
+     color: #3a2c0a;
+     font-size: 1.1rem;
+     font-weight: 600;
 }
-
-.products-card p {
+.products-card p{
   color: #555;
   font-size: 0.9rem;
   height: 40px;
   overflow: hidden;
 }
-
-.price-add {
+.price-add{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 15px;
 }
-
-.price-add span {
+.price-add span{
   color: #4b2c0a;
   font-weight: bold;
   font-size: 1rem;
 }
-
-
-.price-add button {
+.price-add button{
   background: linear-gradient(135deg, #ffb347, #ff7e00);
   color: #fff;
   border: none;
@@ -520,29 +511,24 @@ text-align: center;
   cursor: pointer;
   transition: background 0.3s ease;
 }
-
-.price-add button:hover {
+.price-add button:hover{
   background: linear-gradient(135deg, #ffa12c, #e26900);
 }
-
 .no-products {
   text-align: center;
   color: #6b4a12;
   font-size: 1rem;
   margin-top: 40px;
 }
-
-/* ✨ Animasi halus saat produk muncul */
 .fade-in {
-  animation: fadeInUp 0.6s ease both;
+  animation: fadeInUp 0.6 ease both;
 }
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translateY(20px);
   }
-  to {
+  to{
     opacity: 1;
     transform: translateY(0);
   }
