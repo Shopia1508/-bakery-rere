@@ -15,7 +15,8 @@
   </div>
 
   <!-- Tempat tampil produk -->
-  <div id="product-list" class="product-list" style="display:grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap:20px; margin-top:20px;"></div>
+  <div id="product-list" class="product-list"></div>
+
 </div>
 
 <!-- Script ambil data dari API -->
@@ -41,19 +42,20 @@ function showProducts(data) {
   container.innerHTML = '';
 
   if (!data || data.length === 0) {
-    container.innerHTML = '<p style="text-align:center;">Tidak ada produk di kategori ini.</p>';
+    container.innerHTML = '<p class="text-align:center;">Tidak ada produk di kategori ini.</p>';
     return;
   }
 
+
   data.forEach(product => {
     container.innerHTML += `
-      <div class="products-card" style="border:1px solid #ddd; padding:15px; border-radius:12px; text-align:center;">
-        <img src="/storage/${product.image}" alt="${product.name}" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+      <div class="products-card fade-in">
+        <img src="/storage/${product.image}" alt="${product.name}">
         <h4>${product.name}</h4>
         <p>${product.description}</p>
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:10px;">
+        <div class="price-add">
           <span><strong>Rp ${product.price}</strong></span>
-          <button style="background-color:#f48fb1; border:none; padding:5px 10px; border-radius:6px; cursor:pointer;">+</button>
+          <button>+</button>
         </div>
       </div>
     `;

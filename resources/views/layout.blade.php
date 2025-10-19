@@ -47,12 +47,8 @@
         </div>
     </nav>
     
-
-    
-    <main class="flex-grow-1">
-        <div class="wrapper">
-            @yield('content')
-        </div>
+    <main class="container-fluid p-0 m-0">
+      @yield('content')
     </main>
   </body>
     <footer class="footer py-5 text-white">
@@ -99,6 +95,7 @@
             
    
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
      <!-- AOS JS -->
      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
      <script>
@@ -110,3 +107,6 @@
      </script>
     
      </html>
+    </body>
+    </html>
+
