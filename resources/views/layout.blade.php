@@ -42,7 +42,7 @@
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Order</a>
+                  <a class="nav-link" href="{{ route('order')}}">Order</a>
                 </li>
         </div>
     </nav>
