@@ -16,10 +16,9 @@ class ControllerOrder extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'nama_pembeli' => 'required|string|max:255',
+            'nama' => 'required|string|max:255',
             'produk' => 'required|string|max:255',
             'jumlah' => 'required|integer|min:1',
-            'total_harga' => 'required|integer|min:0',
             'tanggal' => 'required|date',
         ]);
 
@@ -31,7 +30,7 @@ class ControllerOrder extends Controller
     public function index()
     {
         $orders = Order::latest()->get();
-        return view('order.index', compact('orders'));
+        return view('index', compact('orders'));
     }
 
     public function edit($id)
@@ -44,7 +43,7 @@ class ControllerOrder extends Controller
     {
         $order = Order::findOrFail($id);
         $order->update($request->all());
-        return redirect('/dataharian')->with('success', 'Order diperbarui!');
+        return redirect('/index')->with('success', 'Order diperbarui!');
     }
 
     public function destroy($id)

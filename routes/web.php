@@ -15,9 +15,7 @@ Route::get('/location', function () {
     return view('location');
 })->name('location');
 
-Route::get('/order', function () {
-    return view('order');
-})->name('order');
+
 
 Route::get('/about', function () {
     return view ('about');
@@ -25,11 +23,11 @@ Route::get('/about', function () {
 
 
 Route::get('/order', [ControllerOrder::class, 'create'])->name('order'); // Form input
-Route::post('/order', [ControllerOrder::class, 'store'])->name('order.store'); // Simpan data
+Route::post('/order', [ControllerOrder::class, 'store'])->name('order'); // Simpan data
 
 // Halaman tersembunyi (data harian)
-Route::get('/dataharian', [OrderController::class, 'index'])->name('dataharian');
-Route::get('/dataharian/{id}/edit', [OrderController::class, 'edit'])->name('dataharian.edit');
-Route::put('/dataharian/{id}', [OrderController::class, 'update'])->name('dataharian.update');
-Route::delete('/dataharian/{id}', [OrderController::class, 'destroy'])->name('dataharian.destroy');
+Route::get('/index', [ControllerOrder::class, 'index'])->name('index');
+Route::get('/index/{id}/edit', [ControllerOrder::class, 'edit'])->name('index.edit');
+Route::put('/index/{id}', [ControllerOrder::class, 'update'])->name('index.update');
+Route::delete('/index/{id}', [ControllerOrder::class, 'destroy'])->name('index.destroy');
 

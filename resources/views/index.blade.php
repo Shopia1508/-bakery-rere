@@ -3,44 +3,37 @@
 <head>
   <title>Data Harian Order</title>
   <style>
-    body { font-family: Arial; margin: 40px; background: #fff; }
-    table { border-collapse: collapse; width: 100%; }
-    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
-    tr:nth-child(even) { background: #f9f9f9; }
+    body { font-family: Arial; background: #f8f9fa; padding: 20px; }
+    table { border-collapse: collapse; width: 100%; background: white; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    th { background: #eee; }
+    tr:hover { background: #f2f2f2; }
+    h2 { text-align: center; }
   </style>
 </head>
 <body>
-  <h2>Data Order Harian</h2>
-
-  @if(session('success'))
-    <p style="color: green">{{ session('success') }}</p>
-  @endif
-
+  <h2>Data Harian Order</h2>
   <table>
-    <tr>
-      <th>Nama Pembeli</th>
-      <th>Produk</th>
-      <th>Jumlah</th>
-      <th>Total Harga</th>
-      <th>Tanggal</th>
-      <th>Aksi</th>
-    </tr>
-    @foreach($orders as $o)
+    <thead>
       <tr>
-        <td>{{ $o->nama_pembeli }}</td>
-        <td>{{ $o->produk }}</td>
-        <td>{{ $o->jumlah }}</td>
-        <td>Rp{{ number_format($o->total_harga, 0, ',', '.') }}</td>
-        <td>{{ $o->tanggal }}</td>
-        <td>
-          <form method="POST" action="/dataharian/{{ $o->id }}">
-            @csrf
-            @method('DELETE')
-            <button type="submit" onclick="return confirm('Hapus order ini?')">Hapus</button>
-          </form>
-        </td>
+        <th>ID</th>
+        <th>Nama</th>
+        <th>Produk</th>
+        <th>Jumlah</th>
+        <th>Tanggal</th>
       </tr>
-    @endforeach
+    </thead>
+    <tbody>
+      @foreach($orders as $order)
+      <tr>
+        <td>{{ $order->id }}</td>
+        <td>{{ $order->nama }}</td>
+        <td>{{ $order->produk }}</td>
+        <td>{{ $order->jumlah }}</td>
+        <td>{{ $order->tanggal }}</td>
+      </tr>
+      @endforeach
+    </tbody>
   </table>
 </body>
 </html>

@@ -142,7 +142,7 @@ class ProductSeeder extends Seeder
 
             //dessert box
 
-              [
+            [
                 'name' => 'Nutela Dessert Box',
                 'category' => 'Dessert Box',
                 'description' => 'Dessert box lembut berlapis krim Nutella yang lumer dengan tampilan minimalis.',
@@ -174,6 +174,7 @@ class ProductSeeder extends Seeder
                 'name' => 'Red Velvet Cream Box',
                 'category' => 'Dessert Box',
                 'description' => 'Red velvet moist dengan krim keju lembut dan tampilan elegan.',
+                'price' => 45000,
                 'image' => 'red-velvet-cream-box.jpg',
             ],
 
