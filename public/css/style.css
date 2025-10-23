@@ -41,7 +41,7 @@ gap: 50px;
 padding: 60px 80px;
 z-index: 10;
 margin-bottom: 0%;
-background-color: #fff7e9;
+background-color: #ffffff;
 }
 
 .hero-text {
@@ -206,9 +206,10 @@ color: #333333;
 }
 .kategori {
   padding: 60px 0;
-  margin-top: 80px;
+  margin-top: 50px;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 50px;
+  background-color: #ffffff;
 }
 
 .kategori h2 {
@@ -291,18 +292,19 @@ color: #333333;
   /*testimonial section styling*/
   /* Bagian utama section */
 .testimonials-section {
-  padding: 40px 0;
+  padding: 20px 0;
   text-align: center;
   width: 100vw;
-  margin-top: 50px;
   overflow: hidden;
   margin-bottom: 120px;
+  
 }
 
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 20px;
   font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
 }
 .section-content {
   max-width: 1200px;
@@ -320,6 +322,7 @@ color: #333333;
   gap: 30px;
   padding: 20px 40px;
   scrollbar-width: none;
+  margin-top: 10px;
 }
 
 
@@ -436,6 +439,7 @@ background-color: #fff;
     flex-wrap: wrap;
     gap: 15px;
     margin-top: 40px;
+    margin-bottom: 50px;
 }
 .btn-products .btn{
    background: linear-gradient(135deg, #d49c3d, #8b5a20);
@@ -532,4 +536,21 @@ background-color: #fff;
     opacity: 1;
     transform: translateY(0);
   }
+}
+.text-contactus{
+  font-weight: 700;
+  align-items: center;
+  margin: 40px 0;
+}
+.contact-info i{
+  color: #6d4c0f;
+  margin-right: 10px;
+}
+.btn-coklat{
+  background-color: #6d4c0f;
+  color: white;
+  border: none;
+}
+.btn-coklat:hover{
+  background-color: #deb22f;
 }

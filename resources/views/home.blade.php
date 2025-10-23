@@ -57,19 +57,19 @@
   </div>
   <div class="boxes">
     <div class="box">
-      <img src="{{ asset('images/birthdaycake.jpeg') }}" alt="">
-      <h4>easy to order</h4>
-      <p>you only need a few steps in ordering food</p>
+      <img src="{{ asset('images/delivery.png') }}" alt="">
+      <h4>Pengiriman cepat</h4>
+      <p>Pengiriman selalu tepat waktu</p>
     </div>
     <div class="box">
-      <img src="{{ asset('images/birthdaycake.jpeg') }}" alt="">
-      <h4>fatest delivery</h4>
-      <p>delivery that is always on time even faster</p>
+      <img src="{{ asset('images/cake.png') }}" alt="">
+      <h4>Bisa custom cake</h4>
+      <p>Buat kue unikmu sendiri sesuai keinginanmu</p>
     </div>
     <div class="box">
-      <img src="{{ asset('images/birthdaycake.jpeg') }}" alt="">
-      <h4>good quality</h4>
-      <p>not only fast for us quality is number one</p>
+      <img src="{{ asset('images/order.png') }}" alt="">
+      <h4>Mudah dipesan</h4>
+      <p>Hanya beberapa langkah untuk memesan kue sesuai keinginanmu</p>
     </div>
   </div>
 </section>
