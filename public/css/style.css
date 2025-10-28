@@ -16,12 +16,7 @@ body {
     background-color: #fff7e9;
 }
 
-@media (max-width: 992px) {
-  .navbar-custom {
-    flex-direction: column;
-    text-align: center;
-    padding: 10px 20px;
-  }
+
   
 .navbar-custom .navbar-brand {
     font-size: 22px;
@@ -708,3 +703,84 @@ background-color: #fff;
   }
 }
 }
+.order-section {
+    padding: 120px 20px 80px;
+    background-color: #fffaf0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .order-card {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(210, 180, 140, 0.12);
+    padding: 40px;
+    transition: transform 0.3s ease;
+  }
+
+  .order-card:hover { transform: translateY(-4px); }
+
+  .order-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #c97b43;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+
+  .cake-fa {
+    font-size: 30px;
+    color: #e8b68b;
+  }
+
+  .order-info {
+    background: #fff7ec;
+    border: 1px solid #f3dfc1;
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    color: #5a4634;
+  }
+
+  .order-info p {
+    margin: 5px 0;
+    font-size: 15px;
+  }
+
+  .order-info i {
+    color: #d4a373;
+    margin-right: 8px;
+  }
+
+  .form-label { font-weight: 600; color: #5a4634; margin-bottom: 6px; }
+  .form-control {
+    border-radius: 12px;
+    border: 2px solid #f7d9aa;
+    padding: 10px 12px;
+    transition: 0.25s;
+  }
+  .form-control:focus {
+    border-color: #e0a96d;
+    box-shadow: 0 0 8px rgba(224,169,109,0.25);
+  }
+
+  .btn-order {
+    background: linear-gradient(135deg, #a86a10, #cf8f31, #f0b44a);
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 600;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    transition: all 0.25s ease;
+  }
+
+  .btn-order:hover {
+    background-color: #e4b180;
+    transform: translateY(-2px);
+  }
