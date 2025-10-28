@@ -26,7 +26,7 @@
         SweetBite Cakes & Cookies — pusat kue ulang tahun, aneka cake, bolu, dan roti setiap hari. <br>
         Praktis, lezat, dan cocok untuk semua perayaan.
       </p>
-      <a href="#" class="btn-order">Pesan Sekarang</a>
+      <a href="{{route ('order')}}" class="btn-order">Order Now</a>
     </div>
   </div>
 </section>

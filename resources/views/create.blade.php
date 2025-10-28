@@ -21,6 +21,7 @@
     <input type="text" name="produk" placeholder="Produk" required><br>
     <input type="number" name="jumlah" placeholder="Jumlah" required><br>
     <input type="date" name="tanggal" required><br>
+    <input type="text" name="nomor_telepon" placeholder="nomor_telepon" required><br>
     <button type="submit">Order</button>
   </form>
 </body>

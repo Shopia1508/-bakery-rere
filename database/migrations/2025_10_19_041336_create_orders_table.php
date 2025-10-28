@@ -8,18 +8,19 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::table('orders', function (Blueprint $table) {
+        Schema::create('orders', function (Blueprint $table) {
+            $table->id();
             $table->string('nama')->nullable();
             $table->string('produk')->nullable();
             $table->integer('jumlah')->nullable();
             $table->date('tanggal')->nullable();
+            $table->string('nomor_telepon')->nullable();
+            $table->timestamps();
         });
     }
 
     public function down(): void
     {
-        Schema::table('orders', function (Blueprint $table) {
-            $table->dropColumn(['nama', 'produk', 'jumlah', 'tanggal']);
-        });
+        Schema::dropIfExists('orders');
     }
 };
