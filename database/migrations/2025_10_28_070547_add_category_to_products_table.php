@@ -9,13 +9,21 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-   public function up(): void
+ public function up(): void
 {
+
     Schema::table('products', function (Blueprint $table) {
         if (!Schema::hasColumn('products', 'category')) {
             $table->string('category')->nullable()->after('nama');
         }
     });
+
+    if (!Schema::hasColumn('products', 'category')) {
+        Schema::table('products', function (Blueprint $table) {
+            $table->string('category')->nullable()->after('name');
+        });
+    }
+
 }
 
 public function down(): void

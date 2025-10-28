@@ -23,34 +23,40 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="{{ route('home') }}">SWEET BITE <span> CAKE & COOKIES </span></a> 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
-                  </li>
-                <li class="nav-item" >
-                  <a class="nav-link active" aria-current="page" href="{{ route('products') }}">Product</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{{ route('location') }}">Location</a>
-                </li>
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+  <div class="container">
+      <a class="navbar-brand" href="{{ route('home') }}">
+          SWEET BITE <span>CAKE & COOKIES</span>
+      </a> 
 
-                <li class="nav-item">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto"> 
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="{{ route('products') }}">Product</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="{{ route('location') }}">Location</a>
+              </li>
+              <li class="nav-item">
                   <a class="nav-link" href="{{ route('order')}}">Order</a>
-                </li>
-        </div>
-    </nav>
-    
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
     <main class="container-fluid p-0 m-0">
       @yield('content')
     </main>
-  </body>
+
     <footer class="footer py-5 text-white">
         <div class="container-fluid px-5">
           <div class="row justify-content-between">
@@ -60,6 +66,7 @@
               <p class="mt-3">
                 "Nikmati kue lembut dengan bahan berkualitas, desain cantik, dan rasa manis pas, cocok untuk hadiah maupun momen istimewa."
               </p>
+              <p><i class="bi bi-geo-alt"></i> Jl. Veteran III, Banjar Sari, Kec. Ciawi, Kabupaten Bogor, Jawa Barat 16720</p>
             </div>
       
             <!-- Kolom 2 -->

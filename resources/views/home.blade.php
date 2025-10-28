@@ -23,10 +23,13 @@
     <!-- Teks tetap -->
     <div class="banner-text text-start">
       <p>
-        SweetBite Cakes & Cookies — pusat kue ulang tahun, aneka cake, bolu, dan roti setiap hari. <br>
-        Praktis, lezat, dan cocok untuk semua perayaan.
+        SweetBite – Cita Rasa Premium di Setiap Gigitan.
+        Kami menghadirkan kue istimewa yang dibuat dari bahan terbaik,
+        sempurna untuk setiap momen berharga dalam hidupmu. ✨
       </p>
       <a href="{{route ('order')}}" class="btn-order">Order Now</a>
+
+
     </div>
   </div>
 </section>
@@ -45,7 +48,6 @@
   </div>
 
   <div class="hero-img">
-    <h3>"Handmade with love <br> Tasted with joy."</h3>
     <img src="{{ asset('images/toko.jpeg') }}" alt="toko" class="float-img">
   </div>
 </div>
@@ -53,7 +55,7 @@
 {{-- Service --}}
 <section class="sec service" id="services">
   <div class="head">
-    <h1 class="heading_1" data-aos="fade-down">Our service</h1>
+    <h1 class="heading_1" data-aos="fade-down">Layanan kami</h1>
   </div>
   <div class="boxes">
     <div class="box">
