@@ -521,7 +521,7 @@ body {
 }
 .price-add{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: 15px;
 }
@@ -530,20 +530,9 @@ body {
   font-weight: bold;
   font-size: 1rem;
 }
-.price-add button{
-  background: linear-gradient(135deg, #ffb347, #ff7e00);
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-.price-add button:hover{
-  background: linear-gradient(135deg, #ffa12c, #e26900);
-}
+
+
+
 .no-products {
   text-align: center;
   color: #6b4a12;
