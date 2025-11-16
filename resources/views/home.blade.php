@@ -2,172 +2,111 @@
 
 @section('content')
 
-{{-- Banner --}}
-<section class="banner">
-  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="{{ asset('images/banners1.jpeg') }}" class="d-block w-100" alt="Banners 1">
+<section class="hero-section">
+  <div class="hero-container">
+      <div class="hero-left">
+          <h1>
+              Every cup holds a <span>little story</span><br>
+              and a <span>little peace</span>
+          </h1>
+
+          <p>Setiap cangkir disajikan dengan penuh perhatian
+              untuk memberikan rasa nyaman dan berkualitas.
+          </p>
+
+          <a href="{{ route('products') }}" class="btn-order2">Lihat Selengkapnya</a>
       </div>
-      <div class="carousel-item">
-        <img src="{{ asset('images/banners2.jpg') }}" class="d-block w-100" alt="Banners 2">
-      </div>
-      <div class="carousel-item">
-        <img src="{{ asset('images/banners3.jpg') }}" class="d-block w-100" alt="Banners 3">
-      </div>
-      <div class="carousel-item">
-        <img src="{{ asset('images/banners4.jpeg') }}" class="d-block w-100" alt="Banners 4">
+
+      <div class="hero-right">
+          <div class="circle-bg"></div>
+          <img src="{{ asset('images/coffe.png') }}" class="hero-img" alt="Coffee">
       </div>
     </div>
+</section>
 
-    <!-- Teks tetap -->
-    <div class="banner-text text-start">
-      <p>
-        SweetBite – Cita Rasa Premium di Setiap Gigitan.
-        Kami menghadirkan kue istimewa yang dibuat dari bahan terbaik,
-        sempurna untuk setiap momen berharga dalam hidupmu. ✨
+<section class="content-section">
+    <div class="content-left">
+      <img src="{{ asset('images/coffeshop.jpg') }}" class="content-img" alt="Coffeeshop">
+    </div>
+    <div class="content-container">
+    <div class="content-right">
+      <p> 
+        Café ini berdiri di Bogor sebagai ruang nyaman bagi siapa pun yang ingin rehat sejenak dari rutinitas. Di sini, pengunjung dapat menikmati kopi hangat, suasana tenang, dan momen kecil yang membuat pikiran terasa lebih lega. Setiap sudut café dirancang untuk memberi rasa teduh—baik untuk bekerja, berbincang, atau sekadar meluangkan waktu untuk diri sendiri. Dengan aroma kopi, musik lembut, dan pelayanan ramah, café ini berusaha membuat hari siapa pun terasa lebih ringan.
+
       </p>
-      <a href="{{route ('order')}}" class="btn-order">Order Now</a>
-
-
     </div>
   </div>
+
 </section>
 
-<!-- Hero Section -->
-<div class="hero">
-  <div class="hero-text">
-    <h2>
-      <span style="color: #5a3b00" data-aos="fade-right">SWEET BITE </span><br>
-      <span style="color: #e1a22c" data-aos="fade-right">CAKE &COOKIES</span>
-    </h2>
-    <p data-aos="zoom-in-up">
-      SweetBite Cakes & Cookies — pusat kue ulang tahun, aneka cake, bolu, <br>
-      dan roti setiap hari. Praktis, lezat, dan cocok untuk semua perayaan.
-    </p>
-  </div>
-
-  <div class="hero-img">
-    <img src="{{ asset('images/toko.jpeg') }}" alt="toko" class="float-img">
-  </div>
-</div>
-
-{{-- Service --}}
-<section class="sec service" id="services">
-  <div class="head">
-    <h1 class="heading_1" data-aos="fade-down">Layanan kami</h1>
-  </div>
-  <div class="boxes">
-    <div class="box">
-      <img src="{{ asset('images/delivery.png') }}" alt="">
-      <h4>Pengiriman cepat</h4>
-      <p>Pengiriman selalu tepat waktu</p>
-    </div>
-    <div class="box">
-      <img src="{{ asset('images/cake.png') }}" alt="">
-      <h4>Bisa custom cake</h4>
-      <p>Buat kue unikmu sendiri sesuai keinginanmu</p>
-    </div>
-    <div class="box">
-      <img src="{{ asset('images/order.png') }}" alt="">
-      <h4>Mudah dipesan</h4>
-      <p>Hanya beberapa langkah untuk memesan kue sesuai keinginanmu</p>
-    </div>
-  </div>
-</section>
-
-{{-- Kategori --}}
-<section class="kategori py-5">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-3 mb-4 mb-md-0">
-        <h2 data-aos="fade-right">Kategori</h2>
-
+{{--Categories--}}
+<section class="categories-section">
+  <h1 class="categories-title">Categories</h1>
+  <div class="categories-container">
+    <div class="categories-box">
+      <div class="imgBx"> 
+        <img src="{{ asset('images/coffee.jpg') }}"> 
       </div>
+      <div class="categories-content">
+        <h3>Coffee</h3>
+        <p>
+          Setiap cangkir kopi di sini bukan hanya minuman, tapi momen kecil untuk berhenti sejenak. 
+          Ada kehangatan yang pelan-pelan menenangkan, seolah dunia ikut melambat saat aroma kopi mulai terasa.
+        </p>
+        
+      </div>
+    </div>
 
-      <div class="col-md-9">
-        <div id="multiCardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-          <div class="carousel-inner">
-
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-              <div class="row justify-content-center">
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="{{ asset('images/birthdaycake.jpeg') }}" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title">Birthday Cake</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="{{ asset('images/brownies.jpeg') }}" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title">Brownies</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="{{ asset('images/bentocake.jpeg') }}" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title">Bento Cake</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 2 -->
-            <div class="carousel-item">
-              <div class="row justify-content-center">
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="{{ asset('images/bolu.jpeg') }}" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title">Bolu</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="{{ asset('images/desertbox.jpeg') }}" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title">Dessert Box</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="{{ asset('images/nastar.jpeg') }}" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title">Dry Cake</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- Tombol navigasi -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#multiCardCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#multiCardCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </button>
-
+      <div class="categories-box">
+        <div class="imgBx"> 
+          <img src="{{ asset('images/matcha.jpg') }}"> 
+        </div>
+        <div class="categories-content">
+          <h3>Non Coffee</h3>
+          <p>
+            Setiap minuman non-coffee kami diracik untuk menyegarkan, bukan sekadar menghilangkan dahaga. 
+            Rasanya lembut, tampilannya cantik, dan pastinya bisa memperbaiki mood kamu.
+          </p>
+          
         </div>
       </div>
-    </div>
+
+        <div class="categories-box">
+          <div class="imgBx"> 
+            <img src="{{ asset('images/ricebowl.jpg') }}"> 
+          </div>
+          <div class="categories-content">
+            <h3>Food</h3>
+            <p>
+              Dari menu ringan hingga makanan berat, semuanya dibuat untuk memberikan pengalaman makan 
+              yang sederhana namun tetap berkesan. Karena di café, makanan bukan sekadar pelengkap, 
+              tapi bagian dari cerita.
+            </p>
+            
+          </div>
+        </div>
+
+          <div class="categories-box">
+            <div class="imgBx"> 
+              <img src="{{ asset('images/dessert.jpg') }}"> 
+            </div>
+            <div class="categories-content">
+              <h3>Dessert</h3>
+              <p>
+                Setiap potongan dessert punya cara halus untuk membuatmu merasa lebih baik. 
+                Manisnya pas, lembut, dan sempurna untuk menemani obrolan panjang ataupun waktu menyendiri.
+              </p>
+              
+            </div>
+          </div>
   </div>
 </section>
 
+
 {{-- Review --}}
+<h1 class="section-title" >Review Customer</h1>
 <section class="testimonials-section">
-  <h1 class="section-title" data-aos="fade-up"   data-aos-offset="200" data-aos-duration="1000">R<span>E</span>V<span>I</span>E<span>W</span></h1>
+  
   <div class="section-content">
     <div class="slider-container">
       <div class="slider-wrapper">
@@ -175,22 +114,22 @@
           <li class="testimonial">
             <img src="{{ asset('images/salma.jpeg') }}" alt="User" class="user-image">
             <h3 class="name">Salma Salsabil</h3>
-            <i class="feedback">"Loved the brownies. Perfectly balanced and rich. Will order again."</i>
+            <i class="feedback">"Café cozy dengan rasa kopi yang pas dan ambience yang bikin betah."</i>
           </li>
           <li class="testimonial">
             <img src="{{ asset('images/salma 2.jpeg') }}" alt="User" class="user-image">
-            <h3 class="name">Alya Putri</h3>
-            <i class="feedback">"Cakenya lembut banget, manisnya pas!"</i>
+            <h3 class="name">Nadine</h3>
+            <i class="feedback">“Minuman enak, tempat bersih, vibes-nya asik. Recommended!”</i>
           </li>
           <li class="testimonial">
             <img src="{{ asset('images/salma3.jpeg') }}" alt="User" class="user-image">
-            <h3 class="name">Carissa Nur</h3>
-            <i class="feedback">"Desain kuenya lucu banget, cocok buat hadiah!"</i>
+            <h3 class="name">Kathrine</h3>
+            <i class="feedback">“Tempatnya nyaman, kopinya enak, dan pelayanannya ramah. Enak buat santai atau kerja.”</i>
           </li>
           <li class="testimonial">
             <img src="{{ asset('images/salma.jpeg') }}" alt="User" class="user-image">
-            <h3 class="name">Salmine Bakery</h3>
-            <i class="feedback">"Best seller banget! Semua suka browniesnya."</i>
+            <h3 class="name">Casey</h3>
+            <i class="feedback">"Tema cafe nya bagus banget! cocok buat foto."</i>
           </li>
         </ul>
       </div>
@@ -198,21 +137,57 @@
   </div>
 </section>
 
-@endsection
+{{--Latest Blog--}}
+<section class="blog-section">
+  <h1 class="blog-title">Latest Blog</h1>
+  <div class="blog-container">
+    <div class="blog-card">
+      <img src="{{ asset('images/coffee2.jpg') }}"> 
+      <div class="blog-content">
+        <p>
+          Kopi selalu punya cerita di setiap 
+          cangkirnya. Bukan hanya soal rasa, tapi 
+          tentang momen kecil yang tercipta saat kita menikmatinya. 
+          Banyak orang menjadikan kopi sebagai awal hari, tempat singgah di tengah kesibukan, 
+          atau teman tenang di sore yang panjang.</p>
+      </div>
+    </div>
+    <div class="blog-card">
+      <img src="{{ asset('images/people.jpg') }}"> 
+      <div class="blog-content">
+        <p>
+          Ada satu hal yang membuat café ini berbeda dari yang lain: suasananya tidak pernah benar-benar sepi.
+           Hampir setiap bulan, café ini selalu mengadakan event di depan tokonya. 
+          Semua acara itu membuat café terasa hidup dan penuh energi positif.</p>
+      </div>
+    </div>
+    <div class="blog-card">
+      <img src="{{ asset('images/interior.jpg') }}"> 
+      <div class="blog-content">
+        <p>
+          Interior café ini dirancang dengan nuansa hangat dan minimalis. Warna-warna earthy, lampu warm membuat suasana 
+          terasa nyaman sejak pertama masuk.  meja dan sofa ditata rapi untuk kebutuhan kerja maupun santai. 
+          Sederhana, estetik, dan bikin siapa pun betah berlama-lama.</p>
+      </div>
+    </div>
+  </div>
+  <section class="gallery-section">
+    <h1 class="gallery-title">Gallery</h1>
+    <div class="gallery-container">
+      <div class="gallery-content">
+      <!--Gallery 1!-->
+      <img src="{{ asset('images/gallery1.jpg') }}"> 
+      <img src="{{ asset('images/gallery2.jpg') }}"> 
+      <img src="{{ asset('images/gallery3.jpg') }}"> 
 
-@section('scripts')
-<script>
-  const myCarousel = document.querySelector('#heroCarousel');
-  const carousel = new bootstrap.Carousel(myCarousel, {
-    interval: 3000, // dipercepat dari 5000 ke 3000
-    ride: 'carousel',
-    pause: false
-  });
+      <!--Gallery 2!-->
+      <img src="{{ asset('images/gallery4.jpg') }}"> 
+      <img src="{{ asset('images/gallery5.jpg') }}"> 
+      <img src="{{ asset('images/gallery6.jpg') }}"> 
+    </div>
+    </div>
 
-  AOS.init({
-    once: true,
-    duration: 800,
-    offset: 0
-  });
-</script>
+  </section>
+
+</section>
 @endsection
