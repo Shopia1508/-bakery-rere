@@ -7,7 +7,7 @@
 <div class="gambar-container" data-aos="fade-in">
     <img src="{{ asset('images/toko.jpg') }}" alt="Roti Enak">
     <div class="teks-di-atas" data-aos="fade-right" data-aos-delay="200">
-        <h1>Selamat Datang di Global Bakery</h1>
+        <h1>Selamat Datang di sweet bike cake and cookies</h1>
         <p>Rasakan kehangatan setiap gigitan.  
         Roti segar, aroma yang menggoda, dan cita rasa penuh cinta dari dapur kami. 🥐</p>
     </div>
@@ -42,14 +42,14 @@
     </div>
 
     <div class="gambar" data-aos="zoom-in">
-        <img src="{{ asset('images/sincan.jpeg') }}" alt="Founder Global Bakery">
+        <img src="{{ asset('images/ceo.jpeg') }}" alt="Founder Global Bakery">
     </div>
 </section>
 
 {{-- Best Seller --}}
 <section class="container my-5 d-flex align-items-center justify-content-between flex-wrap" data-aos="fade-up">
     <div class="col-md-5 mb-4 mb-md-0" data-aos="zoom-in">
-        <img src="{{ asset('images/cakies.jpeg') }}" alt="Best Seller" class="img-fluid rounded-4 shadow">
+        <img src="{{ asset('images/oreo-crunch-cake.jpg') }}" alt="Best Seller" class="img-fluid rounded-4 shadow">
     </div>
 
     <div class="col-md-6" data-aos="fade-left">
