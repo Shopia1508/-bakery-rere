@@ -48,6 +48,34 @@
         <button type="submit" class="btn btn-order">Pesan Sekarang</button>
       </form>
     </div>
+    {{--popup--}}
+    <div id="popupPesan" class="popup">
+      <div class="popup-content">
+        <p>Pesanan Anda telah di buat!! Terima kasih telah memesan</p>
+        <button id="tutupPopup" class="btn-popup">Tutup</button>
+      </div>
+    </div>
   </div>
 </section>
+@if (session('success'))
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const popup = document.getElementById("popupPesan");
+      const tutup = document.getElementById("tutupPopup");
+
+      //tampilan popup
+      popup.style.display ="flex";
+
+      //tombol tutup popup
+      tutup.onclick = function(){
+        popup.style.display ="none";
+      };
+
+      //klik di luar popup juga menutup
+      window.onclick = function (e) {
+        if (e.target === popup) popup.style.display = "none";
+      };
+    });
+  </script>
+@endif
 @endsection

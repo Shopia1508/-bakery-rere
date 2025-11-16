@@ -5,12 +5,10 @@
   <div class="products-text">
     <h2>Our Product</h2>
     <div class="btn-products">
-        <button onclick="filterCategory('Birthday cake')" class="btn">Birthday cake</button>
-        <button onclick="filterCategory('Brownies')" class="btn">Brownies</button>
-        <button onclick="filterCategory('Bento cake')" class="btn">Bento cake</button>
-        <button onclick="filterCategory('Dessert box')" class="btn">Dessert box</button>
-        <button onclick="filterCategory('Bolu')" class="btn">Bolu</button>
-        <button onclick="filterCategory('Dry cake')" class="btn">Dry cake</button>
+        <button onclick="filterCategory('Coffe')" class="btn">Coffe</button>
+        <button onclick="filterCategory('Food')" class="btn">Foods</button>
+        <button onclick="filterCategory('NonCoffe')" class="btn">Non Coffe</button>
+        <button onclick="filterCategory('Dessert')" class="btn">Dessert</button>
     </div>
   </div>
 
@@ -53,7 +51,7 @@ function showProducts(data) {
       <p>${product.description}</p>
       <div class="price-add">
         <span><strong>Rp ${product.price}</strong></span>
-        <button>+</button>
+        
       </div>
     </div>
   `;
