@@ -24,10 +24,13 @@ Route::get('/about', function () {
 
 Route::get('/order', [ControllerOrder::class, 'create'])->name('order'); // Form input
 Route::post('/order', [ControllerOrder::class, 'store'])->name('order'); // Simpan data
+Route::post('/order/create-form-cart', [ControllerOrder::class,'createFormCart'])->name('order.createFromCart');
 
 // Halaman tersembunyi (data harian)
 Route::get('/index', [ControllerOrder::class, 'index'])->name('index');
 Route::get('/index/{id}/edit', [ControllerOrder::class, 'edit'])->name('index.edit');
 Route::put('/index/{id}', [ControllerOrder::class, 'update'])->name('index.update');
 Route::delete('/index/{id}', [ControllerOrder::class, 'destroy'])->name('index.destroy');
+
+
 

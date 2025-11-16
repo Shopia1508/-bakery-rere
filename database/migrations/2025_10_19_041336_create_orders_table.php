@@ -13,8 +13,8 @@ return new class extends Migration
             $table->string('nama')->nullable();
             $table->string('produk')->nullable();
             $table->integer('jumlah')->nullable();
-            $table->date('tanggal')->nullable();
             $table->string('nomor_telepon')->nullable();
+            $table->date('tanggal')->nullable();
             $table->timestamps();
         });
     }

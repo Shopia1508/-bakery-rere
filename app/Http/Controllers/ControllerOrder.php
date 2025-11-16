@@ -61,8 +61,8 @@ class ControllerOrder extends Controller
             'nama' => 'required|string|max:255',
             'produk' => 'required|string|max:255',
             'jumlah' => 'required|integer|min:1',
-            'tanggal' => 'required|date',
             'nomor_telepon' => 'required|string|max:50',
+            'tanggal' => 'required|date',
         ]);
 
         $order = Order::findOrFail($id);

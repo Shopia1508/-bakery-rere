@@ -36,6 +36,11 @@
         </div>
 
         <div class="mb-3">
+          <label for="nomor_telepon" class="form-label">Nomor Telepon</label>
+          <input type="text" name="nomor_telepon" id="nomor_telepon" class="form-control" placeholder="Nomor Telepon" required>
+        </div>
+
+        <div class="mb-3">
           <label for="tanggal" class="form-label">Tanggal Pengambilan</label>
           <input type="date" name="tanggal" id="tanggal" class="form-control" required>
         </div>
