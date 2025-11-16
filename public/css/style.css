@@ -661,10 +661,3 @@ body {
     background-color: #e4b180;
     transform: translateY(-2px);
   }
-  .service .box i {
-    font-size: 50px; /* ubah sesuai ukuran yang diinginkan */
-    color: #ff6b6b; /* contoh warna ikon */
-    margin-bottom: 15px; /* beri jarak dari teks */
-  }
-
-  

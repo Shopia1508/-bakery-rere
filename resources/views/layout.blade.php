@@ -123,7 +123,6 @@
          easing: 'ease-in-out',
        });
      </script>
-    
      </html>
     </body>
     </html>
