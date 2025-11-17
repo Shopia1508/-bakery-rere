@@ -700,4 +700,102 @@ body {
     .title-underline{
       width: 60px;
     }
-  }
+}
+.vismis-title{
+  text-align: center;
+  margin-top: 70px;
+}
+.vismis-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  margin: auto;
+}
+.vismis-card{
+  position: relative;
+  width: 320px;
+  height: 440px;
+  border-radius: 15px;
+  margin: 30px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+              inset -5px -5px  rgba(255, 255, 255, 0.5),
+              5px 5px 15px rgba(0, 0, 0, 0.1)
+               -5px -5px -5px rgba(255, 255, 255,0.5);
+}
+.vismis-box{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.vismis-card:hover .vismis-box{
+  transform: translateY(-50px);
+  box-shadow: 0 10px 40px rgba(0,0, 0, 0.2);
+  background: linear-gradient(45deg, #6d4b3e, #e0c7a8);
+}
+.vismis-content{
+  padding: 20px;
+  text-align: center; 
+  position: relative;
+}
+ .vismis-content h2{
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(0, 0, 0, 0.02);
+  transition: 0.5s;
+  pointer-events: none;
+}
+ .vismis-card:hover .vismis-content h2{
+  color: rgba(0, 0, 0, 0.05);
+}
+.vismis-content h3{
+  font-size: 1.8em;
+  color: #777;
+  z-index: 1;
+  transition: 0.5s;
+}
+.vismis-card:hover .vismis-content h3{
+  color: #fff;
+}
+ .vismis-content p{
+  font-size: 1em;
+  font-weight: 300;
+  color: #777;
+  line-height: 1.5;
+  transition: 0.5s;
+  text-align: start;
+}
+.vismis-container .vismis-card:hover .vismis-box .vismis-content h3,
+.vismis-container .vismis-card:hover .vismis-box .vismis-content p
+{
+   color: #fff;
+}
+.vismis-list{
+  margin: 0;
+  padding-left: 20px;
+  color: #777;
+  font-size: 1em;
+  line-height: 1.2;
+  transition: 0.5s;
+  text-align: start;
+}
+.vismis-list li{
+  margin-bottom: 8px;
+}
+.vismis-card:hover .vismis-list{
+  color: #fff;
+}
