@@ -47,4 +47,21 @@
     </div>
 </div>
 
+<div class="about-section">
+    <div class="about-image">
+        <img src="{{ asset('images/Mocha.jpg') }}" alt="Cofffe and Cake">
+
+    </div>
+
+    <div class="about-right">
+        <p>
+            Setiap cangkir kopi yang kami adalah hasil dari perhatian kecil yang kami
+            berikan pada detail dari pemilihan biji hingga cara menyeduhnya. Karena bagi kami,
+            kopi bukan sekedar minuman, melainkan teman yang menemani cerita, menghangatkan
+            suasana, dan membawa kenyamanan dalam setiap tegukan.
+        </p>
+    </div>
+
+</div>
+
 @endsection
