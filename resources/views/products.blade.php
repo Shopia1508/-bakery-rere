@@ -51,7 +51,6 @@ function showProducts(data) {
       <p>${product.description}</p>
       <div class="price-add">
         <span><strong>Rp ${product.price}</strong></span>
-        
       </div>
     </div>
   `;

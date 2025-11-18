@@ -18,7 +18,8 @@ class ProductSeeder extends Seeder
                 'category' => 'Coffe',
                 'description' => 'Coffe latte yang dipadukan dengan caramel gurih',
                 'price' => 32000,
-                'image' => 'caramel latte.jpg',
+                'image' => 'caramel-atte.jpg',
+
             ],
             [
                 'name' => 'Americano',
@@ -32,14 +33,14 @@ class ProductSeeder extends Seeder
                 'category' => 'Coffe',
                 'description' => 'Cappuccino lembut dengan aroma hazelnut yang khas dan menenangkan.',
                 'price' => 32000,
-                'image' => 'hazelnut-cappuccino.jpg',
+                'image' => 'hazelnut-cappuchino.jpg',
             ],
             [
                 'name' => 'Mocha Classic',
                 'category' => 'Coffe',
                 'description' => 'Perpaduan cokelat dan espresso yang rich, cocok untuk pecinta manis.',
                 'price' => 30000,
-                'image' => 'mocha-classic.jpg',
+                'image' => 'Mocha.jpg',
             ],
             [
                 'name' => 'Vanilla Cold Brew',
@@ -63,21 +64,21 @@ class ProductSeeder extends Seeder
         'category' => 'Food',
         'description' => 'Lasagna daging dengan saus bolognese dan keju melimpah yang creamy.',
         'price' => 55000,
-        'image' => 'beef-lasagna.jpg',
+        'image' => 'beef-lasagna.jpg'
     ],
     [
         'name' => 'Chicken Rice Bowl',
         'category' => 'Food',
         'description' => 'Nasi hangat dengan chicken teriyaki yang juicy dan gurih.',
         'price' => 35000,
-        'image' => 'chicken-rice-bowl.jpg',
+        'image' => 'ricebowl.jpg',
     ],
     [
         'name' => 'Creamy Carbonara Pasta',
         'category' => 'Food',
         'description' => 'Pasta creamy dengan smoked beef dan saus carbonara khas.',
         'price' => 45000,
-        'image' => 'creamy-carbonara-pasta.jpg',
+        'image' => 'pasta.jpg',
     ],
     [
         'name' => 'Cheese Garlic Bread',
@@ -91,7 +92,7 @@ class ProductSeeder extends Seeder
         'category' => 'Food',
         'description' => 'Set bento lengkap dengan chicken katsu renyah dan saus tonkatsu.',
         'price' => 48000,
-        'image' => 'chicken-katsu-bento.jpg',
+        'image' => 'katsu.jpg',
     ],
 
     //non_coffe
@@ -109,7 +110,7 @@ class ProductSeeder extends Seeder
         'category' => 'NonCoffe',
         'description' => 'Minuman matcha premium dengan rasa earthy dan susu yang lembut.',
         'price' => 28000,
-        'image' => 'matcha-latte.jpg',
+        'image' => 'mathca-latte.jpg',
     ],
     [
         'name' => 'Lemon Tea',
@@ -130,7 +131,7 @@ class ProductSeeder extends Seeder
         'category' => 'NonCoffe',
         'description' => 'Minuman taro yang manis dan harum dengan tekstur lembut.',
         'price' => 26000,
-        'image' => 'taro-latte.jpg',
+        'image' => 'taro.jpg',
     ],
 
     //dessert
@@ -147,7 +148,7 @@ class ProductSeeder extends Seeder
         'category' => 'Dessert',
         'description' => 'Cheesecake creamy dengan topping strawberry segar.',
         'price' => 42000,
-        'image' => 'strawberry-cheesecake.jpg',
+        'image' => 'cheecake.jpg',
     ],
     [
         'name' => 'Vanilla Panna Cotta',
@@ -161,7 +162,7 @@ class ProductSeeder extends Seeder
         'category' => 'Dessert',
         'description' => 'Lapisan oreo crumbs, whipped cream, dan custard yang manis.',
         'price' => 28000,
-        'image' => 'oreo-cream-parfait.jpg',
+        'image' => 'Oreo-cream-parfaits.jpg',
     ],
     [
         'name' => 'Mango Pudding',
