@@ -64,4 +64,45 @@
 
 </div>
 
+    <div class="about4-container">
+        <div class="about4-card">
+         <div class="imgBxabout">
+         <img src="{{ asset('images/event.jpg') }}" alt="Cofffe and Cake">
+        </div>
+             <div class="about4-content"> 
+                <h2>Event di depan toko</h2>
+                <p>
+                    Kami menghadirkan event di depan store untuk menambah pengalaman ngopi kamu.
+                     Lebih hidup, lebih hangat, lebih seru!
+                </p>
+             </div>
+        </div>
+        <div class="about4-card">
+            <div class="imgBxabout">
+            <img src="{{ asset('images/interiors.jpg') }}" alt="Cofffe and Cake">
+        </div>
+                <div class="about4-content">
+                    <h2>Interior yang menarik</h2>
+                <p>
+                    Ruang dengan nuansa cozy dan detail artistik, dirancang agar setiap
+                     sudut memberikan pengalaman visual yang menyenangkan.
+                </p>
+            </div>
+           </div>
+           <div class="about4-card">
+            <div class="imgBxabout">
+            <img src="{{ asset('images/spot.jpg') }}" alt="Cofffe and Cake">
+        </div>
+                <div class="about4-content"> 
+                    <h2>Spot foto yang keren</h2>
+                    <p>
+                        Dari sudut estetik hingga dekor yang eye-catching 
+                        kami siapkan banyak spot foto keren untuk kamu abadikan.
+                    </p>
+                </div>
+           </div>
+    </div>
+</body>
+</html>
+
 @endsection
