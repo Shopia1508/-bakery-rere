@@ -140,7 +140,7 @@
 {{--Latest Blog--}}
 <section class="blog-section">
   <h1 class="blog-title">Latest Blog</h1>
-  <div class="blog-container">
+  <div class="blog-container" onclick= "openPopup()">
     <div class="blog-card">
       <img src="{{ asset('images/coffee2.jpg') }}"> 
       <div class="blog-content">
@@ -171,6 +171,17 @@
       </div>
     </div>
   </div>
+
+<script>
+
+  function openPopup() {
+    document.getElementById("popup").style.display = "flex";
+  }
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+</script>
+
   <section class="gallery-section">
     <h1 class="gallery-title">Gallery</h1>
     <div class="gallery-container">

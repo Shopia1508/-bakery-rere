@@ -317,12 +317,39 @@ body {
 }
 .blog-card{
   width: 325px;
-  background-color: #ffffff;
+  background-color: #fffaed;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   margin: 20px;
   align-items: center;
+  cursor: pointer;
+}
+
+  .popup {
+  display: none;            
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;            
+}
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  width: 300px;
+  text-align: center;
+}
+.close {
+  font-size: 24px;
+  float: right;
+  cursor: pointer;
 }
 .blog-card img{
   width: 80%;
