@@ -1,21 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Login Admin</title>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+    {{--font--}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    <h2>Login Admin</h2>
 
-    <form action="/admin/index" method="GET">
-        @csrf
-        <input type="email" name="email" placeholder="Email"><br>
-        <input type="password" name="password" placeholder="Password"><br>
-        <button type="submit">Login</button>
+    <section class="login-section">
+        <div class="login-container">
 
-        @if ($errors->any())
-            <p style="color:rgb(255, 237, 176)">{{ $errors->first() }}</p>
-        @endif
-    </form>
+            <div class="forms-wrapper">
+                <div class="form-container log-in">
+                    <form action="/admin/index" method="GET">
+                        <h1>Login Admin</h1>
+                        @csrf
+                        <input type="email" name="email" placeholder="Email"><br>
+                        <input type="password" name="password" placeholder="Password"><br>
+                        <button type="submit">Login</button>
 
+                        @if ($errors->any())
+                            <p style="color:rgb(255, 250, 233)">{{ $errors->first() }}</p>
+                        @endif
+                    </form>
+                </div>
+            </div>
+
+            <div class="toggle-container">
+                <div class="toggle">
+                    <div class="toggle-panel toggle-right">
+                        <h1>Welcome Back!</h1>
+                        <p>Login untuk buka halaman admin.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 </body>
+
 </html>

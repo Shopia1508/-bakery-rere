@@ -101,29 +101,7 @@
         </div>
       </footer>
       
-    {{--aos--}}
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800, 
-    offset: 150,
-    once: false,   
-  });
-</script>
-
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.js"></script>
-
-     <!-- AOS JS -->
-     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-     <script>
-       AOS.init({
-         duration: 1000,
-         once: true,
-         easing: 'ease-in-out',
-       });
-     </script>
-     </html>
+        
     </body>
     </html>
 
