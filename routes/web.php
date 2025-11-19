@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\ControllerOrder;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AdminController; // <-- WAJIB DITAMBAH
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -15,22 +17,23 @@ Route::get('/location', function () {
     return view('location');
 })->name('location');
 
-
-
 Route::get('/about', function () {
-    return view ('about');
+    return view('about');
 })->name('about');
 
-
-Route::get('/order', [ControllerOrder::class, 'create'])->name('order'); // Form input
-Route::post('/order', [ControllerOrder::class, 'store'])->name('order'); // Simpan data
+// ORDER
+Route::get('/order', [ControllerOrder::class, 'create'])->name('order');
+Route::post('/order', [ControllerOrder::class, 'store'])->name('order');
 Route::post('/order/create-form-cart', [ControllerOrder::class,'createFormCart'])->name('order.createFromCart');
 
-// Halaman tersembunyi (data harian)
-Route::get('/index', [ControllerOrder::class, 'index'])->name('index');
-Route::get('/index/{id}/edit', [ControllerOrder::class, 'edit'])->name('index.edit');
-Route::put('/index/{id}', [ControllerOrder::class, 'update'])->name('index.update');
-Route::delete('/index/{id}', [ControllerOrder::class, 'destroy'])->name('index.destroy');
+// ADMIN LOGIN
+Route::get('/admin-login', [LoginController::class, 'showAdminLogin'])->name('admin.login');
+Route::post('/admin-login', [LoginController::class, 'adminLogin'])->name('admin.login.submit');
 
+// ADMIN DASHBOARD
+Route::get('/admin/index', function () {
+    return view('admin.index');
+})->name('admin.index');
 
-
+// ADMIN MENUS PAGE
+Route::get('/admin/menus', [AdminController::class, 'menus'])->name('admin.menus');
